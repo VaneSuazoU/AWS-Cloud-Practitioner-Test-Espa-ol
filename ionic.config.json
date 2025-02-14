@@ -1,0 +1,7 @@
+{
+  "name": "aws-quiz-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
