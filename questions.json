@@ -1,0 +1,2670 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "type": "single",
+            "question": "Una empresa está planificando migrar sus aplicaciones a AWS Cloud. ¿Cuál de los siguientes beneficios principales de AWS permite a la empresa eliminar grandes inversiones iniciales en hardware?",
+            "options": {
+              "a": "Elasticidad",
+              "b": "Agilidad",
+              "c": "Sin gastos iniciales",
+              "d": "Economías de escala"
+            },
+            "answer": "c",
+            "explanation": "Uno de los beneficios principales de AWS Cloud es que elimina la necesidad de grandes inversiones iniciales en hardware (CAPEX). En lugar de tener que comprar servidores y equipos por adelantado, las empresas pueden pagar solo por los recursos que consumen (OPEX). Esto se conoce como el modelo 'Sin gastos iniciales' o 'Trade capital expense for variable expense'."
+          },
+          {
+            "id": 2,
+            "type": "multiple",
+            "question": "Según el Modelo de Responsabilidad Compartida de AWS, ¿cuáles de las siguientes tareas son responsabilidad del cliente? (Seleccione DOS)",
+            "options": {
+              "a": "Mantenimiento de la infraestructura física de los centros de datos",
+              "b": "Configuración de grupos de seguridad y ACLs de red",
+              "c": "Aplicación de parches al software de virtualización",
+              "d": "Cifrado de datos en reposo y en tránsito"
+            },
+            "answer": ["b", "d"],
+            "explanation": "En el Modelo de Responsabilidad Compartida, AWS es responsable de la 'seguridad DE la nube' (infraestructura física, virtualización, etc.), mientras que el cliente es responsable de la 'seguridad EN la nube'. La configuración de grupos de seguridad y el cifrado de datos son responsabilidades del cliente, ya que involucran la seguridad de los datos y recursos específicos del cliente."
+          },
+          {
+            "id": 3,
+            "type": "single",
+            "question": "Un desarrollador necesita almacenar archivos que se acceden con poca frecuencia pero deben estar disponibles inmediatamente cuando se solicitan. ¿Qué clase de almacenamiento de Amazon S3 es la más rentable para este caso?",
+            "options": {
+              "a": "S3 Standard",
+              "b": "S3 Intelligent-Tiering",
+              "c": "S3 Standard-IA",
+              "d": "S3 Glacier"
+            },
+            "answer": "c",
+            "explanation": "Amazon S3 Standard-IA (Infrequent Access) es ideal para datos que se acceden con menos frecuencia pero requieren acceso rápido cuando se necesitan. Ofrece la misma durabilidad y disponibilidad que S3 Standard, pero a un costo menor por GB almacenado. Sin embargo, tiene un cargo mínimo por objeto de 30 días y cargos de recuperación por GB."
+          },
+          {
+            "id": 4,
+            "type": "single",
+            "question": "Una empresa necesita ejecutar una aplicación web con alta disponibilidad. ¿Qué servicio de AWS debería utilizar para distribuir automáticamente el tráfico entrante entre múltiples instancias EC2?",
+            "options": {
+              "a": "Amazon CloudFront",
+              "b": "AWS Direct Connect",
+              "c": "Elastic Load Balancer",
+              "d": "Amazon Route 53"
+            },
+            "answer": "c",
+            "explanation": "Elastic Load Balancer (ELB) es el servicio diseñado específicamente para distribuir automáticamente el tráfico entrante entre múltiples recursos AWS, como instancias EC2. ELB ayuda a mejorar la disponibilidad y tolerancia a fallos de las aplicaciones al distribuir la carga de trabajo entre múltiples instancias en diferentes zonas de disponibilidad."
+          },
+          {
+            "id": 5,
+            "type": "single",
+            "question": "¿Cuál de los siguientes servicios de AWS proporciona una forma rentable de almacenar copias de seguridad a largo plazo y cumplir con requisitos de retención de datos?",
+            "options": {
+              "a": "Amazon S3 Glacier",
+              "b": "Amazon EBS",
+              "c": "Amazon EFS",
+              "d": "Amazon S3 Standard"
+            },
+            "answer": "a",
+            "explanation": "Amazon S3 Glacier está diseñado específicamente para el archivado de datos y el almacenamiento a largo plazo con costos muy bajos. Es ideal para copias de seguridad y datos que requieren retención a largo plazo pero no necesitan acceso frecuente o inmediato. Glacier ofrece diferentes opciones de recuperación, desde minutos hasta horas, con diferentes costos asociados."
+          },
+          {
+            "id": 6,
+            "type": "multiple",
+            "question": "¿Cuáles de los siguientes son pilares del AWS Well-Architected Framework? (Seleccione DOS)",
+            "options": {
+              "a": "Optimización de costos",
+              "b": "Disponibilidad global",
+              "c": "Excelencia operativa",
+              "d": "Virtualización de recursos"
+            },
+            "answer": ["a", "c"],
+            "explanation": "El AWS Well-Architected Framework se basa en seis pilares fundamentales: Excelencia operativa, Seguridad, Fiabilidad, Eficiencia del rendimiento, Optimización de costos y Sostenibilidad. La optimización de costos y la excelencia operativa son dos de estos pilares fundamentales que ayudan a las organizaciones a construir sistemas seguros, eficientes y rentables en AWS."
+          },
+          {
+            "id": 7,
+            "type": "single",
+            "question": "Una empresa necesita asegurarse de que sus recursos AWS cumplan con regulaciones específicas de la industria. ¿Qué servicio de AWS debería utilizar?",
+            "options": {
+              "a": "AWS Organizations",
+              "b": "AWS Config",
+              "c": "AWS Systems Manager",
+              "d": "AWS Trusted Advisor"
+            },
+            "answer": "b",
+            "explanation": "AWS Config proporciona una vista detallada de la configuración de los recursos AWS en su cuenta. Permite evaluar, auditar y monitorear los cambios en las configuraciones de recursos, lo que es esencial para el cumplimiento normativo. También permite establecer reglas que evalúan automáticamente las configuraciones de recursos contra las mejores prácticas de seguridad y cumplimiento."
+          },
+          {
+            "id": 8,
+            "type": "single",
+            "question": "¿Qué característica de AWS permite a las empresas expandir su infraestructura globalmente con solo unos clics?",
+            "options": {
+              "a": "Zonas de disponibilidad",
+              "b": "Regiones globales",
+              "c": "Edge locations",
+              "d": "Local Zones"
+            },
+            "answer": "b",
+            "explanation": "Las Regiones globales de AWS son ubicaciones geográficas independientes que contienen múltiples Zonas de disponibilidad. AWS tiene regiones en todo el mundo, permitiendo a las empresas implementar sus aplicaciones más cerca de sus usuarios finales con solo unos clics, mejorando la latencia y cumpliendo con requisitos de residencia de datos."
+          },
+          {
+            "id": 9,
+            "type": "multiple",
+            "question": "¿Cuáles de las siguientes son características del modelo de precios de AWS? (Seleccione DOS)",
+            "options": {
+              "a": "Pago por uso",
+              "b": "Contratos anuales obligatorios",
+              "c": "Descuentos por volumen",
+              "d": "Precios fijos independientes del uso"
+            },
+            "answer": ["a", "c"],
+            "explanation": "AWS utiliza un modelo de precios flexible que incluye pago por uso (pay-as-you-go) y descuentos por volumen. El pago por uso permite a los clientes pagar solo por los recursos que consumen, sin compromisos a largo plazo. Los descuentos por volumen se aplican automáticamente a medida que aumenta el uso de ciertos servicios, lo que ayuda a reducir costos a mayor escala."
+          },
+          {
+            "id": 10,
+            "type": "single",
+            "question": "Una empresa necesita aislar recursos y costos entre diferentes departamentos en AWS. ¿Qué solución debería implementar?",
+            "options": {
+              "a": "Múltiples VPCs",
+              "b": "Diferentes regiones",
+              "c": "Cuentas AWS separadas con AWS Organizations",
+              "d": "Tags de recursos"
+            },
+            "answer": "c",
+            "explanation": "AWS Organizations permite crear múltiples cuentas AWS y administrarlas centralmente, proporcionando aislamiento completo de recursos y facturación entre departamentos. Esto ofrece mejor seguridad, control de acceso y visibilidad de costos que otras opciones como VPCs o tags. También facilita la aplicación de políticas de seguridad y cumplimiento a nivel organizacional."
+          },
+          {
+            "id": 11,
+            "type": "single",
+            "question": "¿Qué servicio de AWS ayuda a los clientes a identificar las instancias EC2 infrautilizadas y reducir costos?",
+            "options": {
+              "a": "AWS Cost Explorer",
+              "b": "AWS Trusted Advisor",
+              "c": "AWS CloudWatch",
+              "d": "AWS Budgets"
+            },
+            "answer": "b",
+            "explanation": "AWS Trusted Advisor proporciona recomendaciones en tiempo real para optimizar su infraestructura AWS, incluyendo la identificación de instancias EC2 con baja utilización. Analiza el entorno AWS y sugiere formas de ahorrar dinero, mejorar el rendimiento del sistema y cerrar brechas de seguridad."
+          },
+          {
+            "id": 12,
+            "type": "multiple",
+            "question": "¿Cuáles de los siguientes son beneficios de utilizar AWS CloudFront? (Seleccione DOS)",
+            "options": {
+              "a": "Menor latencia para usuarios finales",
+              "b": "Almacenamiento de datos a largo plazo",
+              "c": "Protección contra ataques DDoS",
+              "d": "Procesamiento de datos en tiempo real"
+            },
+            "answer": ["a", "c"],
+            "explanation": "Amazon CloudFront es un servicio de red de entrega de contenido (CDN) que ofrece dos beneficios principales: 1) Reduce la latencia al entregar contenido desde la ubicación edge más cercana al usuario final, y 2) Proporciona protección contra ataques DDoS a través de AWS Shield Standard, que está integrado con CloudFront sin costo adicional."
+          },
+          {
+            "id": 13,
+            "type": "single",
+            "question": "Una empresa necesita garantizar que sus datos estén almacenados en una región específica por motivos de cumplimiento normativo. ¿Qué característica de AWS aborda este requisito?",
+            "options": {
+              "a": "Soberanía de datos por región",
+              "b": "Replicación automática global",
+              "c": "Edge locations",
+              "d": "Zonas locales"
+            },
+            "answer": "a",
+            "explanation": "AWS mantiene una estricta soberanía de datos por región, lo que significa que los datos permanecen en la región seleccionada a menos que el cliente explícitamente los transfiera. Esto permite a las empresas cumplir con requisitos regulatorios y de residencia de datos específicos de cada país o región."
+          },
+          {
+            "id": 14,
+            "type": "single",
+            "question": "¿Qué nivel de soporte AWS incluye acceso directo a ingenieros de soporte por teléfono 24/7?",
+            "options": {
+              "a": "Basic",
+              "b": "Developer",
+              "c": "Business",
+              "d": "Enterprise"
+            },
+            "answer": "c",
+            "explanation": "El plan de soporte Business de AWS proporciona acceso 24/7 a ingenieros de soporte por teléfono, email y chat. Este nivel de soporte es adecuado para empresas que ejecutan cargas de trabajo de producción y necesitan respuesta rápida a problemas técnicos. El soporte Enterprise ofrece servicios adicionales, pero Business ya incluye soporte telefónico 24/7."
+          },
+          {
+            "id": 15,
+            "type": "multiple",
+            "question": "Según el Modelo de Responsabilidad Compartida de AWS, ¿cuáles de las siguientes son responsabilidades de AWS? (Seleccione DOS)",
+            "options": {
+              "a": "Gestión de parches del sistema operativo invitado",
+              "b": "Mantenimiento físico de servidores",
+              "c": "Configuración de IAM roles",
+              "d": "Seguridad de la red global"
+            },
+            "answer": ["b", "d"],
+            "explanation": "En el Modelo de Responsabilidad Compartida, AWS es responsable de la 'seguridad DE la nube', que incluye: 1) El mantenimiento físico de los servidores y la infraestructura del centro de datos, y 2) La seguridad de la red global que conecta su infraestructura. Las configuraciones de IAM y la gestión de parches del sistema operativo son responsabilidad del cliente."
+          },
+          {
+            "id": 16,
+            "type": "multiple",
+            "question": "Una empresa está migrando su infraestructura a AWS y necesita implementar una estrategia de seguridad en capas. ¿Cuáles de los siguientes servicios de AWS ayudarán a proteger sus aplicaciones web contra amenazas de seguridad? (Seleccione DOS)",
+            "options": {
+              "a": "AWS WAF para proteger contra vulnerabilidades de aplicaciones web como SQL injection y cross-site scripting",
+              "b": "Amazon Inspector para monitorear el tráfico de red",
+              "c": "AWS CloudTrail para registrar las llamadas a la API",
+              "d": "AWS Shield para protección contra ataques DDoS"
+            },
+            "answer": ["a", "d"],
+            "explanation": "AWS WAF y AWS Shield trabajan juntos para proporcionar una protección completa para aplicaciones web. AWS WAF se enfoca en proteger contra vulnerabilidades a nivel de aplicación (capa 7), mientras que AWS Shield proporciona protección contra ataques DDoS (capas 3 y 4). Amazon Inspector es para evaluación de vulnerabilidades en instancias EC2 y CloudTrail es para auditoría de actividad de la API."
+          },
+          {
+            "id": 17,
+            "type": "single",
+            "question": "Un equipo de desarrollo necesita una solución de almacenamiento que permita compartir archivos entre múltiples instancias EC2 en diferentes zonas de disponibilidad. ¿Qué servicio de AWS es el más apropiado para este caso?",
+            "options": {
+              "a": "Amazon S3",
+              "b": "Amazon EFS",
+              "c": "Amazon EBS",
+              "d": "EC2 Instance Store"
+            },
+            "answer": "b",
+            "explanation": "Amazon EFS (Elastic File System) es la mejor opción ya que proporciona un sistema de archivos administrado que puede ser accedido simultáneamente por múltiples instancias EC2 en diferentes zonas de disponibilidad. EBS solo puede ser montado a una instancia a la vez, S3 es almacenamiento de objetos (no un sistema de archivos), y Instance Store es almacenamiento temporal ligado a una única instancia."
+          },
+          {
+            "id": 18,
+            "type": "single",
+            "question": "Según el Modelo de Responsabilidad Compartida de AWS, ¿cuál de las siguientes tareas es responsabilidad del cliente?",
+            "options": {
+              "a": "Mantenimiento físico de los servidores AWS",
+              "b": "Configuración de los grupos de seguridad y reglas de firewall",
+              "c": "Actualización del software de virtualización",
+              "d": "Mantenimiento de la infraestructura de red global"
+            },
+            "answer": "b",
+            "explanation": "Bajo el Modelo de Responsabilidad Compartida, la configuración de los grupos de seguridad y reglas de firewall es responsabilidad del cliente (seguridad EN la nube). AWS es responsable del mantenimiento físico de servidores, software de virtualización e infraestructura de red global (seguridad DE la nube)."
+          },
+          {
+            "id": 19,
+            "type": "multiple",
+            "question": "¿Cuáles de los siguientes son beneficios de utilizar servicios serverless en AWS? (Seleccione DOS)",
+            "options": {
+              "a": "No hay que gestionar la infraestructura subyacente",
+              "b": "Acceso completo al sistema operativo",
+              "c": "Pago solo por el tiempo de ejecución del código",
+              "d": "Mayor control sobre el hardware físico"
+            },
+            "answer": ["a", "c"],
+            "explanation": "Los servicios serverless como AWS Lambda ofrecen dos beneficios principales: 1) AWS gestiona toda la infraestructura subyacente, eliminando la necesidad de administrar servidores, y 2) el modelo de precios se basa en el tiempo real de ejecución del código, no en la capacidad aprovisionada. El acceso al sistema operativo y el control del hardware no son características de los servicios serverless."
+          },
+          {
+            "id": 20,
+            "type": "single",
+            "question": "Una empresa necesita implementar una solución de base de datos que ofrezca alta disponibilidad y failover automático. ¿Qué configuración de Amazon RDS debería utilizar?",
+            "options": {
+              "a": "Multi-AZ",
+              "b": "Read Replicas",
+              "c": "Single-AZ con snapshots automáticos",
+              "d": "Cross-Region Replication"
+            },
+            "answer": "a",
+            "explanation": "La implementación Multi-AZ de Amazon RDS proporciona alta disponibilidad y failover automático mediante la creación de una réplica sincrónica de la base de datos en una zona de disponibilidad diferente. En caso de fallo de la instancia principal o la zona de disponibilidad, RDS automáticamente cambia a la réplica standby sin intervención manual. Las Read Replicas son para escalabilidad de lectura, no para alta disponibilidad."
+          },
+          {
+            "id": 16,
+            "type": "multiple",
+            "question": "Una empresa está migrando su infraestructura a AWS y necesita implementar una estrategia de seguridad en capas. ¿Cuáles de los siguientes servicios de AWS ayudarán a proteger sus aplicaciones web contra amenazas de seguridad? (Seleccione DOS)",
+            "options": {
+              "a": "AWS WAF para proteger contra vulnerabilidades de aplicaciones web como SQL injection y cross-site scripting",
+              "b": "Amazon Inspector para monitorear el tráfico de red",
+              "c": "AWS CloudTrail para registrar las llamadas a la API",
+              "d": "AWS Shield para protección contra ataques DDoS"
+            },
+            "answer": ["a", "d"],
+            "explanation": "AWS WAF y AWS Shield trabajan juntos para proporcionar una protección completa para aplicaciones web. AWS WAF se enfoca en proteger contra vulnerabilidades a nivel de aplicación (capa 7), mientras que AWS Shield proporciona protección contra ataques DDoS (capas 3 y 4). Amazon Inspector es para evaluación de vulnerabilidades en instancias EC2 y CloudTrail es para auditoría de actividad de la API."
+          },          
+          {
+            "id": 17,
+            "type": "single",
+            "question": "Un equipo de desarrollo necesita una solución de almacenamiento que permita compartir archivos entre múltiples instancias EC2 en diferentes zonas de disponibilidad. ¿Qué servicio de AWS es el más apropiado para este caso?",
+            "options": {
+              "a": "Amazon S3",
+              "b": "Amazon EFS",
+              "c": "Amazon EBS",
+              "d": "EC2 Instance Store"
+            },
+            "answer": "b",
+            "explanation": "Amazon EFS (Elastic File System) es la mejor opción ya que proporciona un sistema de archivos administrado que puede ser accedido simultáneamente por múltiples instancias EC2 en diferentes zonas de disponibilidad. EBS solo puede ser montado a una instancia a la vez, S3 es almacenamiento de objetos (no un sistema de archivos), y Instance Store es almacenamiento temporal ligado a una única instancia."
+          },          
+          {
+            "id": 18,
+            "type": "single",
+            "question": "Según el Modelo de Responsabilidad Compartida de AWS, ¿cuál de las siguientes tareas es responsabilidad del cliente?",
+            "options": {
+              "a": "Mantenimiento físico de los servidores AWS",
+              "b": "Configuración de los grupos de seguridad y reglas de firewall",
+              "c": "Actualización del software de virtualización",
+              "d": "Mantenimiento de la infraestructura de red global"
+            },
+            "answer": "b",
+            "explanation": "Bajo el Modelo de Responsabilidad Compartida, la configuración de los grupos de seguridad y reglas de firewall es responsabilidad del cliente (seguridad EN la nube). AWS es responsable del mantenimiento físico de servidores, software de virtualización e infraestructura de red global (seguridad DE la nube)."
+          },          
+          {
+            "id": 19,
+            "type": "multiple",
+            "question": "¿Cuáles de los siguientes son beneficios de utilizar servicios serverless en AWS? (Seleccione DOS)",
+            "options": {
+              "a": "No hay que gestionar la infraestructura subyacente",
+              "b": "Acceso completo al sistema operativo",
+              "c": "Pago solo por el tiempo de ejecución del código",
+              "d": "Mayor control sobre el hardware físico"
+            },
+            "answer": ["a", "c"],
+            "explanation": "Los servicios serverless como AWS Lambda ofrecen dos beneficios principales: 1) AWS gestiona toda la infraestructura subyacente, eliminando la necesidad de administrar servidores, y 2) el modelo de precios se basa en el tiempo real de ejecución del código, no en la capacidad aprovisionada. El acceso al sistema operativo y el control del hardware no son características de los servicios serverless."
+          },          
+          {
+            "id": 20,
+            "type": "single",
+            "question": "Una empresa necesita implementar una solución de base de datos que ofrezca alta disponibilidad y failover automático. ¿Qué configuración de Amazon RDS debería utilizar?",
+            "options": {
+              "a": "Multi-AZ",
+              "b": "Read Replicas",
+              "c": "Single-AZ con snapshots automáticos",
+              "d": "Cross-Region Replication"
+            },
+            "answer": "a",
+            "explanation": "La implementación Multi-AZ de Amazon RDS proporciona alta disponibilidad y failover automático mediante la creación de una réplica sincrónica de la base de datos en una zona de disponibilidad diferente. En caso de fallo de la instancia principal o la zona de disponibilidad, RDS automáticamente cambia a la réplica standby sin intervención manual. Las Read Replicas son para escalabilidad de lectura, no para alta disponibilidad."
+          },          
+          {
+            "id": 21,
+            "type": "single",
+            "question": "¿Qué servicio de AWS ayuda a identificar los recursos mal configurados que podrían representar un riesgo de seguridad o desperdiciar dinero?",
+            "options": {
+              "a": "AWS Config",
+              "b": "AWS CloudTrail",
+              "c": "AWS Trusted Advisor",
+              "d": "Amazon Inspector"
+            },
+            "answer": "c",
+            "explanation": "AWS Trusted Advisor proporciona recomendaciones en tiempo real para ayudar a seguir las mejores prácticas de AWS en cuatro categorías: optimización de costos, seguridad, rendimiento y tolerancia a fallos. Analiza automáticamente tu entorno AWS y sugiere acciones para ahorrar dinero, mejorar el rendimiento del sistema y cerrar brechas de seguridad. AWS Config es para auditar configuraciones, CloudTrail para auditar actividad de API, y Inspector para evaluación de vulnerabilidades."
+          },          
+          {
+            "id": 22,
+            "type": "multiple",
+            "question": "¿Cuáles de las siguientes son características de Amazon S3 Glacier? (Seleccione DOS)",
+            "options": {
+              "a": "Diseñado para datos que se acceden con frecuencia",
+              "b": "Costo más bajo por GB para almacenamiento",
+              "c": "Tiempo de recuperación de datos en minutos a horas",
+              "d": "Ideal para backups y archivos a largo plazo"
+            },
+            "answer": ["b", "d"],
+            "explanation": "Amazon S3 Glacier está diseñado para el almacenamiento a largo plazo de datos que se acceden con poca frecuencia (archivos y backups). Sus principales características son: 1) El costo más bajo por GB entre todas las clases de almacenamiento de S3, ideal para archivos a largo plazo, y 2) Tiempos de recuperación más largos (de minutos a horas) a cambio de costos significativamente menores. No es adecuado para datos que necesitan acceso frecuente o inmediato."
+          },
+          {
+            "id": 23,
+            "type": "multiple",
+            "question": "¿Cuáles de los siguientes son beneficios del cloud computing según AWS? (Seleccione DOS)",
+            "options": {
+              "a": "Convertir gastos variables en gastos fijos",
+              "b": "Beneficiarse de enormes economías de escala",
+              "c": "Necesidad de estimar capacidad a largo plazo",
+              "d": "Incrementar la velocidad y agilidad"
+            },
+            "answer": ["b", "d"],
+            "explanation": "Los principales beneficios del cloud computing incluyen: beneficiarse de enormes economías de escala (debido al volumen de usuarios de AWS) e incrementar la velocidad y agilidad (capacidad de experimentar e innovar rápidamente). Convertir gastos variables en fijos va en contra del modelo cloud, que busca convertir gastos fijos en variables. La necesidad de estimar capacidad a largo plazo se elimina con el cloud computing."
+          },          
+          {
+            "id": 24,
+            "type": "single",
+            "question": "Una compañía necesita monitorear el uso de recursos de AWS, analizar patrones de actividad y crear alertas. ¿Qué servicio de AWS debería usar?",
+            "options": {
+              "a": "AWS CloudTrail",
+              "b": "Amazon CloudWatch",
+              "c": "AWS Config",
+              "d": "Amazon Inspector"
+            },
+            "answer": "b",
+            "explanation": "Amazon CloudWatch es el servicio indicado para monitorear recursos AWS, analizar patrones de uso y crear alertas. CloudTrail es para auditoría de actividad de API, Config es para evaluación de configuraciones y cumplimiento, y Inspector es para evaluación de seguridad automatizada."
+          },          
+          {
+            "id": 25,
+            "type": "single",
+            "question": "¿Qué tipo de escalado AWS describe la capacidad de aumentar o disminuir la potencia de cómputo de un servidor existente (por ejemplo, cambiar de t2.micro a t2.large)?",
+            "options": {
+              "a": "Escalado horizontal",
+              "b": "Escalado vertical",
+              "c": "Escalado elástico",
+              "d": "Escalado automático"
+            },
+            "answer": "b",
+            "explanation": "El escalado vertical (scale up) se refiere a agregar más poder de cómputo a un servidor existente, como cambiar de una instancia t2.micro a una t2.large. El escalado horizontal (scale out) implica agregar más servidores al pool de recursos. El escalado elástico es un término general que describe la capacidad de escalar según la demanda, y el escalado automático se refiere a la automatización del proceso de escalado."
+          },          
+          {
+            "id": 26,
+            "type": "multiple",
+            "question": "¿Cuáles de los siguientes servicios AWS son globales y no están vinculados a una región específica? (Seleccione DOS)",
+            "options": {
+              "a": "Amazon EC2",
+              "b": "AWS IAM",
+              "c": "Amazon CloudFront",
+              "d": "Amazon RDS"
+            },
+            "answer": ["b", "c"],
+            "explanation": "AWS IAM (Identity and Access Management) y Amazon CloudFront son servicios globales y no están vinculados a una región específica. IAM proporciona control de acceso para toda tu cuenta AWS y CloudFront es una red de distribución de contenido (CDN) global. EC2 y RDS son servicios regionales, lo que significa que se ejecutan dentro de una región específica que eliges."
+          },          
+          {
+            "id": 27,
+            "type": "single",
+            "question": "Una empresa necesita una base de datos NoSQL altamente escalable para una aplicación que requiere consistencia eventual. ¿Qué servicio de AWS es el más apropiado?",
+            "options": {
+              "a": "Amazon RDS",
+              "b": "Amazon DynamoDB",
+              "c": "Amazon Redshift",
+              "d": "Amazon ElastiCache"
+            },
+            "answer": "b",
+            "explanation": "Amazon DynamoDB es una base de datos NoSQL totalmente administrada que proporciona un rendimiento rápido y predecible con escalabilidad sin interrupciones. Es ideal para aplicaciones que necesitan consistencia eventual y operaciones de lectura/escritura de baja latencia a cualquier escala. RDS es para bases de datos relacionales, Redshift es para data warehousing, y ElastiCache es para caché en memoria."
+          },          
+          {
+            "id": 28,
+            "type": "single",
+            "question": "¿Qué servicio de AWS utilizarías para crear una conexión de red dedicada desde tu centro de datos local a AWS?",
+            "options": {
+              "a": "AWS VPN",
+              "b": "Amazon Connect",
+              "c": "AWS Direct Connect",
+              "d": "Internet Gateway"
+            },
+            "answer": "c",
+            "explanation": "AWS Direct Connect es un servicio que establece una conexión de red dedicada desde tus instalaciones a AWS. Esta conexión privada puede ayudar a reducir los costos de red, aumentar el rendimiento del ancho de banda y proporcionar una experiencia de red más consistente que las conexiones basadas en Internet. AWS VPN es una conexión cifrada a través de Internet, Amazon Connect es un centro de contacto en la nube, y Internet Gateway es para acceso a Internet desde una VPC."
+          },
+          {
+            "id": 29,
+            "type": "single",
+            "question": "Una empresa necesita recibir alertas cuando sus costos mensuales de AWS excedan un umbral específico. ¿Qué servicio de AWS debería utilizar?",
+            "options": {
+              "a": "AWS Cost Explorer",
+              "b": "AWS Budgets",
+              "c": "AWS CloudWatch",
+              "d": "AWS Pricing Calculator"
+            },
+            "answer": "b",
+            "explanation": "AWS Budgets permite establecer presupuestos personalizados que alertan cuando los costos o el uso exceden (o se prevé que excedan) el monto presupuestado. Cost Explorer es para analizar costos históricos, CloudWatch es para monitoreo de recursos, y Pricing Calculator es para estimar costos futuros."
+          },          
+          {
+            "id": 30,
+            "type": "multiple",
+            "question": "¿Cuáles de las siguientes son características del pilar de Seguridad del AWS Well-Architected Framework? (Seleccione DOS)",
+            "options": {
+              "a": "Proteger los datos en tránsito y en reposo",
+              "b": "Optimizar el uso de recursos",
+              "c": "Automatizar la seguridad mejor por eventos",
+              "d": "Maximizar el rendimiento del sistema"
+            },
+            "answer": ["a", "c"],
+            "explanation": "El pilar de Seguridad del AWS Well-Architected Framework se centra en proteger información y sistemas. Las principales características incluyen la protección de datos (tanto en tránsito como en reposo) y la automatización de las mejores prácticas de seguridad. La optimización de recursos pertenece al pilar de Optimización de Costos, y el rendimiento del sistema al pilar de Eficiencia del Rendimiento."
+          },          
+          {
+            "id": 31,
+            "type": "single",
+            "question": "Un equipo de desarrollo necesita una forma de compartir y reutilizar plantillas de infraestructura AWS. ¿Qué servicio deberían utilizar?",
+            "options": {
+              "a": "AWS CloudFormation",
+              "b": "AWS Elastic Beanstalk",
+              "c": "AWS OpsWorks",
+              "d": "AWS CodeDeploy"
+            },
+            "answer": "a",
+            "explanation": "AWS CloudFormation permite crear y gestionar recursos de AWS mediante plantillas (templates). Estas plantillas pueden ser compartidas y reutilizadas para crear infraestructura de manera consistente. Elastic Beanstalk es para desplegar aplicaciones, OpsWorks es para automatización de operaciones, y CodeDeploy es para automatizar despliegues de aplicaciones."
+          },          
+          {
+            "id": 32,
+            "type": "multiple",
+            "question": "¿Cuáles de los siguientes son métodos para reducir costos en AWS? (Seleccione DOS)",
+            "options": {
+              "a": "Utilizar instancias reservadas para cargas de trabajo predecibles",
+              "b": "Mantener todas las instancias ejecutándose 24/7",
+              "c": "Utilizar Auto Scaling para ajustar la capacidad según la demanda",
+              "d": "Usar solo instancias On-Demand"
+            },
+            "answer": ["a", "c"],
+            "explanation": "Las instancias reservadas pueden proporcionar descuentos significativos (hasta 75%) para cargas de trabajo predecibles. Auto Scaling ayuda a optimizar costos ajustando automáticamente la capacidad según la demanda. Mantener instancias ejecutándose continuamente cuando no son necesarias aumenta los costos, y usar solo instancias On-Demand es generalmente más costoso que una combinación de tipos de instancias."
+          },          
+          {
+            "id": 33,
+            "type": "single",
+            "question": "¿Qué característica de AWS permite a los usuarios restringir el acceso a los servicios y recursos AWS basándose en la ubicación geográfica?",
+            "options": {
+              "a": "Security Groups",
+              "b": "Network ACLs",
+              "c": "IAM Policies",
+              "d": "Políticas de control de servicio (SCPs)"
+            },
+            "answer": "c",
+            "explanation": "Las IAM Policies pueden incluir condiciones que restringen el acceso basándose en la ubicación geográfica del solicitante usando la condición 'aws:SourceIp'. Los Security Groups y Network ACLs operan a nivel de red y no pueden restringir acceso basado en geografía. Las SCPs son para control de acceso a nivel de organización."
+          },          
+          {
+            "id": 34,
+            "type": "single",
+            "question": "Una empresa necesita una solución de base de datos que proporcione el máximo rendimiento para análisis complejos de datos históricos. ¿Qué servicio de AWS debería utilizar?",
+            "options": {
+              "a": "Amazon DynamoDB",
+              "b": "Amazon RDS",
+              "c": "Amazon Redshift",
+              "d": "Amazon ElastiCache"
+            },
+            "answer": "c",
+            "explanation": "Amazon Redshift es un servicio de data warehouse que está optimizado para el análisis de grandes volúmenes de datos históricos. Proporciona un rendimiento hasta 10 veces superior a las bases de datos tradicionales para análisis complejos. DynamoDB es para operaciones de alta velocidad con datos actuales, RDS es para bases de datos relacionales tradicionales, y ElastiCache es para caché en memoria."
+          },
+          {
+            "id": 35,
+            "type": "single",
+            "question": "Un administrador necesita auditar todos los cambios realizados en los recursos de AWS durante los últimos 90 días. ¿Qué servicio de AWS debería utilizar?",
+            "options": {
+              "a": "Amazon CloudWatch",
+              "b": "AWS CloudTrail",
+              "c": "AWS Config",
+              "d": "AWS Trusted Advisor"
+            },
+            "answer": "b",
+            "explanation": "AWS CloudTrail es el servicio que permite auditar todas las llamadas a la API de AWS, incluyendo los cambios realizados en los recursos. CloudTrail mantiene un historial de la actividad de la cuenta durante los últimos 90 días de forma predeterminada. CloudWatch es para monitoreo de recursos, Config es para evaluación de configuraciones, y Trusted Advisor es para recomendaciones de optimización."
+          },          
+          {
+            "id": 36,
+            "type": "multiple",
+            "question": "¿Cuáles de las siguientes son características del servicio Amazon DynamoDB? (Seleccione DOS)",
+            "options": {
+              "a": "Base de datos NoSQL totalmente administrada",
+              "b": "Soporte nativo para consultas SQL complejas",
+              "c": "Escalado automático sin tiempo de inactividad",
+              "d": "Requiere administración del sistema operativo"
+            },
+            "answer": ["a", "c"],
+            "explanation": "Amazon DynamoDB es una base de datos NoSQL totalmente administrada que ofrece escalado automático sin tiempo de inactividad. No requiere administración del sistema operativo ya que es un servicio completamente administrado por AWS, y no está diseñada para consultas SQL complejas al ser una base de datos NoSQL."
+          },          
+          {
+            "id": 37,
+            "type": "single",
+            "question": "Una empresa necesita compartir contenido web globalmente con la menor latencia posible. ¿Qué servicio de AWS debería utilizar?",
+            "options": {
+              "a": "Amazon CloudFront",
+              "b": "Amazon Route 53",
+              "c": "Elastic Load Balancing",
+              "d": "AWS Global Accelerator"
+            },
+            "answer": "a",
+            "explanation": "Amazon CloudFront es una red de entrega de contenido (CDN) que entrega datos, videos, aplicaciones y APIs a usuarios de todo el mundo con baja latencia y altas velocidades de transferencia. Utiliza ubicaciones de borde en todo el mundo para cachear el contenido cerca de los usuarios finales. Route 53 es para DNS, ELB es para balanceo de carga, y Global Accelerator es para optimizar el tráfico de red."
+          },          
+          {
+            "id": 38,
+            "type": "multiple",
+            "question": "¿Cuáles de los siguientes son pilares del AWS Well-Architected Framework? (Seleccione DOS)",
+            "options": {
+              "a": "Excelencia operativa",
+              "b": "Disponibilidad global",
+              "c": "Eficiencia del rendimiento",
+              "d": "Elasticidad de recursos"
+            },
+            "answer": ["a", "c"],
+            "explanation": "El AWS Well-Architected Framework se basa en seis pilares fundamentales: excelencia operativa, seguridad, fiabilidad, eficiencia del rendimiento, optimización de costos y sostenibilidad. La disponibilidad global y la elasticidad de recursos son características de AWS pero no son pilares del Framework."
+          },          
+          {
+            "id": 39,
+            "type": "single",
+            "question": "¿Qué tipo de instancia EC2 debería usar una empresa que necesita ejecutar software con licencias ligadas al hardware?",
+            "options": {
+              "a": "Instancias Reserved",
+              "b": "Instancias On-Demand",
+              "c": "Instancias Spot",
+              "d": "Instancias Dedicated Host"
+            },
+            "answer": "d",
+            "explanation": "Las instancias Dedicated Host proporcionan servidores físicos dedicados que permiten usar licencias de software existentes ligadas al hardware, como Windows Server o SQL Server. Las otras opciones son modelos de precios o tipos de instancias que no garantizan el uso exclusivo del hardware físico."
+          },          
+          {
+            "id": 40,
+            "type": "single",
+            "question": "¿Qué servicio de AWS ayuda a proteger las credenciales de la base de datos y facilita su rotación automática?",
+            "options": {
+              "a": "AWS KMS",
+              "b": "AWS Secrets Manager",
+              "c": "AWS Certificate Manager",
+              "d": "AWS IAM"
+            },
+            "answer": "b",
+            "explanation": "AWS Secrets Manager ayuda a proteger las credenciales de la base de datos, claves de API y otros secretos. Permite rotar automáticamente las credenciales y facilita su gestión durante todo su ciclo de vida. KMS es para gestión de claves de cifrado, ACM es para certificados SSL/TLS, e IAM es para gestión de identidades y accesos."
+          },          
+          {
+            "id": 41,
+            "type": "multiple",
+            "question": "¿Cuáles de las siguientes son ventajas de utilizar Amazon RDS sobre instalar una base de datos en EC2? (Seleccione DOS)",
+            "options": {
+              "a": "Parches automáticos del sistema operativo",
+              "b": "Control total sobre el motor de la base de datos",
+              "c": "Backups automáticos",
+              "d": "Acceso a nivel de sistema operativo"
+            },
+            "answer": ["a", "c"],
+            "explanation": "Amazon RDS es un servicio administrado que automatiza tareas como los parches del sistema operativo y los backups. No proporciona acceso a nivel de sistema operativo ni control total sobre el motor de la base de datos, ya que estos aspectos son administrados por AWS para simplificar la operación."
+          },          
+          {
+            "id": 42,
+            "type": "single",
+            "question": "Una empresa necesita procesar datos en tiempo real de miles de fuentes de IoT. ¿Qué servicio de AWS es más apropiado?",
+            "options": {
+              "a": "Amazon Kinesis",
+              "b": "Amazon EMR",
+              "c": "Amazon Redshift",
+              "d": "Amazon Athena"
+            },
+            "answer": "a",
+            "explanation": "Amazon Kinesis está diseñado para el procesamiento de datos en tiempo real a gran escala, como datos de IoT, logs, métricas y eventos. EMR es para procesamiento de big data por lotes, Redshift es un data warehouse, y Athena es para análisis de datos en S3 usando SQL."
+          },          
+          {
+            "id": 43,
+            "type": "single",
+            "question": "¿Qué característica de AWS permite a los usuarios acceder a recursos AWS usando sus credenciales corporativas existentes?",
+            "options": {
+              "a": "AWS Organizations",
+              "b": "AWS Single Sign-On",
+              "c": "AWS Directory Service",
+              "d": "AWS IAM"
+            },
+            "answer": "b",
+            "explanation": "AWS Single Sign-On (SSO) permite a los usuarios iniciar sesión una vez y acceder a múltiples cuentas y aplicaciones AWS usando sus credenciales corporativas existentes. Organizations es para gestión de múltiples cuentas, Directory Service es para gestionar directorios, e IAM es para gestión de accesos dentro de AWS."
+          },          
+          {
+            "id": 44,
+            "type": "multiple",
+            "question": "¿Qué elementos debe proteger un cliente según el Modelo de Responsabilidad Compartida de AWS? (Seleccione DOS)",
+            "options": {
+              "a": "Datos de la aplicación",
+              "b": "Hardware del centro de datos",
+              "c": "Configuración del firewall",
+              "d": "Virtualización"
+            },
+            "answer": ["a", "c"],
+            "explanation": "Bajo el Modelo de Responsabilidad Compartida, el cliente es responsable de la seguridad 'en' la nube, que incluye la protección de sus datos y la configuración de controles de acceso como firewalls. AWS es responsable de la seguridad 'de' la nube, incluyendo el hardware físico y la infraestructura de virtualización."
+          },          
+          {
+            "id": 45,
+            "type": "single",
+            "question": "Una aplicación necesita almacenar datos que requieren tiempos de lectura de milisegundos. ¿Qué servicio de AWS es más apropiado?",
+            "options": {
+              "a": "Amazon S3 Glacier",
+              "b": "Amazon EFS",
+              "c": "Amazon DynamoDB",
+              "d": "Amazon S3 Standard-IA"
+            },
+            "answer": "c",
+            "explanation": "Amazon DynamoDB ofrece rendimiento de milisegundos para operaciones de lectura y escritura, independientemente del tamaño de los datos. S3 Glacier es para archivo a largo plazo, EFS es un sistema de archivos compartido, y S3 Standard-IA es para datos poco accedidos que requieren acceso rápido cuando se necesitan."
+          },          
+          {
+            "id": 46,
+            "type": "single",
+            "question": "¿Qué servicio de AWS debe usarse para crear una conexión VPN entre una red corporativa y AWS?",
+            "options": {
+              "a": "AWS VPN Site-to-Site",
+              "b": "Internet Gateway",
+              "c": "NAT Gateway",
+              "d": "VPC Endpoint"
+            },
+            "answer": "a",
+            "explanation": "AWS Site-to-Site VPN crea una conexión segura entre su red corporativa y su VPC de AWS. Internet Gateway es para acceso a Internet, NAT Gateway es para que instancias privadas accedan a Internet, y VPC Endpoint es para conectar con servicios AWS sin usar Internet."
+          },          
+          {
+            "id": 47,
+            "type": "multiple",
+            "question": "¿Cuáles son beneficios de utilizar Elastic Load Balancing? (Seleccione DOS)",
+            "options": {
+              "a": "Alta disponibilidad",
+              "b": "Almacenamiento persistente",
+              "c": "Distribución automática del tráfico",
+              "d": "Backup automático"
+            },
+            "answer": ["a", "c"],
+            "explanation": "Elastic Load Balancing proporciona alta disponibilidad al distribuir automáticamente el tráfico entrante entre múltiples objetivos como instancias EC2. No proporciona almacenamiento persistente ni funcionalidades de backup, ya que estas son características de servicios de almacenamiento."
+          },          
+          {
+            "id": 48,
+            "type": "single",
+            "question": "¿Qué servicio de AWS proporciona aislamiento a nivel de hardware para cargas de trabajo que requieren altos niveles de cumplimiento normativo?",
+            "options": {
+              "a": "Security Groups",
+              "b": "Dedicated Instances",
+              "c": "Reserved Instances",
+              "d": "Spot Instances"
+            },
+            "answer": "b",
+            "explanation": "Las Dedicated Instances son instancias EC2 que se ejecutan en hardware dedicado a un solo cliente, proporcionando aislamiento adicional para cargas de trabajo que requieren altos niveles de cumplimiento normativo. Las Reserved y Spot Instances son modelos de precios, y los Security Groups son firewalls virtuales."
+          },          
+          {
+            "id": 49,
+            "type": "single",
+            "question": "¿Qué servicio de AWS permite analizar datos en Amazon S3 usando consultas SQL estándar sin necesidad de cargar los datos en una base de datos?",
+            "options": {
+              "a": "Amazon Redshift",
+              "b": "Amazon RDS",
+              "c": "Amazon Athena",
+              "d": "Amazon EMR"
+            },
+            "answer": "c",
+            "explanation": "Amazon Athena es un servicio de consultas interactivo que facilita el análisis de datos en Amazon S3 usando SQL estándar, sin necesidad de cargar los datos en una base de datos tradicional. Redshift es un data warehouse, RDS es para bases de datos relacionales, y EMR es para procesamiento de big data."
+          },
+          {
+            "id": 50,
+            "type": "multiple",
+            "question": "¿Cuáles de las siguientes son características de Amazon S3 Standard? (Seleccione DOS)",
+            "options": {
+              "a": "99.999999999% (11 9's) de durabilidad",
+              "b": "Costo más bajo por GB almacenado",
+              "c": "Diseñado para datos frecuentemente accedidos",
+              "d": "Tiempo de recuperación en horas"
+            },
+            "answer": ["a", "c"],
+            "explanation": "Amazon S3 Standard ofrece una durabilidad del 99.999999999% (11 9's) y está diseñado para datos que se acceden frecuentemente. No es la opción más económica (ese sería S3 Glacier) y proporciona acceso inmediato a los datos, no en horas."
+          },          
+          {
+            "id": 51,
+            "type": "single",
+            "question": "Una empresa quiere migrar su aplicación web a AWS y necesita mantener el mismo nivel de control sobre la arquitectura de red que tiene en su centro de datos local. ¿Qué servicio de AWS debería utilizar?",
+            "options": {
+              "a": "Amazon VPC",
+              "b": "AWS Direct Connect",
+              "c": "Amazon Route 53",
+              "d": "Internet Gateway"
+            },
+            "answer": "a",
+            "explanation": "Amazon Virtual Private Cloud (VPC) permite crear una red virtual aislada en la nube AWS donde puede lanzar recursos AWS en una red que usted define. Tiene control completo sobre su entorno de red virtual, incluyendo la selección de rangos de IP, creación de subredes y configuración de tablas de ruteo y gateways de red."
+          },          
+          {
+            "id": 52,
+            "type": "single",
+            "question": "¿Qué plan de soporte AWS proporciona acceso a recomendaciones de arquitectura en el contexto de sus casos de uso específicos?",
+            "options": {
+              "a": "Basic Support",
+              "b": "Developer Support",
+              "c": "Business Support",
+              "d": "Enterprise On-Ramp Support"
+            },
+            "answer": "c",
+            "explanation": "El plan Business Support proporciona acceso 24/7 a soporte técnico y orientación arquitectónica en el contexto de sus casos de uso específicos. Basic Support solo incluye recursos de soporte básicos, Developer Support ofrece orientación arquitectónica general, y Enterprise On-Ramp es más costoso para este requisito específico."
+          },
+          {
+            "id": 53,
+            "type": "multiple",
+            "question": "¿Cuáles de las siguientes son prácticas recomendadas para la optimización de costos en AWS? (Seleccione DOS)",
+            "options": {
+              "a": "Usar instancias reservadas para cargas de trabajo estables",
+              "b": "Mantener recursos inactivos para futuros proyectos",
+              "c": "Implementar políticas de tag para rastrear costos por departamento",
+              "d": "Usar solo instancias On-Demand para todas las cargas de trabajo"
+            },
+            "answer": ["a", "c"],
+            "explanation": "Las instancias reservadas pueden proporcionar ahorros significativos para cargas de trabajo estables y predecibles. Las políticas de tag ayudan a rastrear y asignar costos por departamento o proyecto. Mantener recursos inactivos aumenta los costos innecesariamente, y usar solo instancias On-Demand no es costo-efectivo para cargas de trabajo predecibles."
+          },          
+          {
+            "id": 54,
+            "type": "single",
+            "question": "Una empresa necesita una solución para analizar grandes conjuntos de datos usando consultas SQL complejas. Los datos se actualizan cada 24 horas. ¿Qué servicio de AWS es más apropiado?",
+            "options": {
+              "a": "Amazon DynamoDB",
+              "b": "Amazon RDS",
+              "c": "Amazon Redshift",
+              "d": "Amazon ElastiCache"
+            },
+            "answer": "c",
+            "explanation": "Amazon Redshift es un servicio de data warehouse diseñado específicamente para análisis de grandes conjuntos de datos usando consultas SQL complejas. Es ideal para datos que se actualizan periódicamente y requieren análisis complejo. DynamoDB es para operaciones de baja latencia, RDS para bases de datos relacionales tradicionales, y ElastiCache para caché en memoria."
+          },          
+          {
+            "id": 55,
+            "type": "single",
+            "question": "¿Qué herramienta de AWS permite a los desarrolladores definir aplicaciones serverless y sus recursos asociados usando YAML o JSON?",
+            "options": {
+              "a": "AWS CloudFormation",
+              "b": "AWS Elastic Beanstalk",
+              "c": "AWS SAM",
+              "d": "AWS OpsWorks"
+            },
+            "answer": "c",
+            "explanation": "AWS Serverless Application Model (SAM) es un framework de código abierto para construir aplicaciones serverless en AWS. Permite definir aplicaciones serverless y sus recursos asociados usando YAML o JSON. CloudFormation es para infraestructura general, Elastic Beanstalk para aplicaciones web, y OpsWorks para gestión de configuración."
+          },          
+          {
+            "id": 56,
+            "type": "multiple",
+            "question": "¿Cuáles de los siguientes son servicios de computación serverless en AWS? (Seleccione DOS)",
+            "options": {
+              "a": "AWS Lambda",
+              "b": "Amazon EC2",
+              "c": "AWS Fargate",
+              "d": "Amazon ECS con EC2"
+            },
+            "answer": ["a", "c"],
+            "explanation": "AWS Lambda y AWS Fargate son servicios de computación serverless. Lambda permite ejecutar código sin provisionar servidores, y Fargate permite ejecutar contenedores sin gestionar la infraestructura subyacente. EC2 requiere gestión de servidores, y ECS con EC2 requiere gestionar las instancias EC2 subyacentes."
+          },          
+          {
+            "id": 57,
+            "type": "single",
+            "question": "¿Qué servicio de AWS proporciona una vista unificada de los gastos en todas las cuentas de una organización?",
+            "options": {
+              "a": "AWS Cost Explorer",
+              "b": "AWS Budgets",
+              "c": "AWS Organizations",
+              "d": "AWS Consolidated Billing"
+            },
+            "answer": "a",
+            "explanation": "AWS Cost Explorer proporciona una interfaz fácil de usar para visualizar, entender y gestionar los costos y el uso de AWS a lo largo del tiempo, incluyendo una vista consolidada de los gastos en todas las cuentas de una organización. Budgets es para alertas de costos, Organizations para gestión de múltiples cuentas, y Consolidated Billing es una característica de Organizations."
+          },          
+          {
+            "id": 58,
+            "type": "single",
+            "question": "Una empresa necesita cifrar automáticamente todos los nuevos objetos almacenados en un bucket de S3. ¿Qué característica debería utilizar?",
+            "options": {
+              "a": "Cifrado del lado del cliente",
+              "b": "Cifrado del lado del servidor con claves administradas por S3 (SSE-S3)",
+              "c": "AWS KMS",
+              "d": "Políticas de bucket"
+            },
+            "answer": "b",
+            "explanation": "El cifrado del lado del servidor con claves administradas por S3 (SSE-S3) proporciona cifrado automático de todos los nuevos objetos en un bucket S3. Es la opción más simple y automática para cifrar datos en S3. El cifrado del lado del cliente requiere gestión manual, KMS es un servicio separado, y las políticas de bucket son para control de acceso."
+          },          
+          {
+            "id": 59,
+            "type": "multiple",
+            "question": "¿Cuáles son características del plan AWS Enterprise Support? (Seleccione DOS)",
+            "options": {
+              "a": "Acceso a un Technical Account Manager (TAM)",
+              "b": "Tiempo de respuesta menor a 24 horas para casos de soporte",
+              "c": "Soporte solo durante horario laboral",
+              "d": "Revisiones de arquitectura y recomendaciones proactivas"
+            },
+            "answer": ["a", "d"],
+            "explanation": "El plan Enterprise Support incluye un Technical Account Manager (TAM) dedicado y proporciona revisiones de arquitectura y recomendaciones proactivas. También ofrece tiempos de respuesta menores a 15 minutos para casos críticos y soporte 24/7, no solo durante horario laboral."
+          },          
+          {
+            "id": 60,
+            "type": "single",
+            "question": "¿Qué servicio de AWS debería usar una empresa para implementar un proceso de aprobación multi-paso para cambios en la infraestructura?",
+            "options": {
+              "a": "AWS Config",
+              "b": "AWS Service Catalog",
+              "c": "AWS Systems Manager",
+              "d": "AWS CloudFormation"
+            },
+            "answer": "b",
+            "explanation": "AWS Service Catalog permite a las organizaciones crear y gestionar catálogos de servicios aprobados para uso en AWS, incluyendo procesos de aprobación multi-paso para cambios en la infraestructura. Config es para auditoría de recursos, Systems Manager para operaciones, y CloudFormation para automatización de infraestructura."
+          },          
+          {
+            "id": 61,
+            "type": "single",
+            "question": "Una empresa necesita analizar los logs de su aplicación en tiempo real para detectar y responder a incidentes de seguridad. ¿Qué servicio de AWS debería utilizar?",
+            "options": {
+              "a": "Amazon CloudWatch Logs",
+              "b": "AWS CloudTrail",
+              "c": "Amazon GuardDuty",
+              "d": "AWS Security Hub"
+            },
+            "answer": "c",
+            "explanation": "Amazon GuardDuty es un servicio de detección de amenazas que monitorea continuamente actividades maliciosas y comportamientos no autorizados para proteger sus cuentas AWS, cargas de trabajo y datos. CloudWatch Logs es para almacenamiento y análisis de logs, CloudTrail para auditoría de API, y Security Hub para gestión centralizada de seguridad."
+          },          
+          {
+            "id": 62,
+            "type": "multiple",
+            "question": "¿Cuáles son ventajas de utilizar Amazon Aurora sobre bases de datos tradicionales? (Seleccione DOS)",
+            "options": {
+              "a": "Escalado automático del almacenamiento",
+              "b": "Copias de seguridad continuas",
+              "c": "Acceso completo al sistema operativo",
+              "d": "Personalización del motor de base de datos"
+            },
+            "answer": ["a", "b"],
+            "explanation": "Amazon Aurora ofrece escalado automático del almacenamiento y copias de seguridad continuas como parte de sus características administradas. No proporciona acceso al sistema operativo ni permite personalizar el motor de base de datos, ya que es un servicio completamente administrado."
+          },          
+          {
+            "id": 63,
+            "type": "single",
+            "question": "¿Qué servicio de AWS es más apropiado para ejecutar contenedores sin gestionar la infraestructura subyacente?",
+            "options": {
+              "a": "Amazon ECS con EC2",
+              "b": "Amazon EKS con EC2",
+              "c": "AWS Fargate",
+              "d": "Amazon EC2"
+            },
+            "answer": "c",
+            "explanation": "AWS Fargate es un motor de computación serverless para contenedores que permite ejecutar contenedores sin tener que administrar servidores o clústeres. ECS y EKS con EC2 requieren gestionar las instancias EC2 subyacentes, y EC2 requiere gestión completa de la infraestructura."
+          },          
+          {
+            "id": 64,
+            "type": "single",
+            "question": "Una empresa necesita replicar sus datos entre regiones AWS para cumplir con requisitos de recuperación ante desastres. ¿Qué característica de Amazon S3 debería utilizar?",
+            "options": {
+              "a": "Versionamiento",
+              "b": "Replicación entre regiones (CRR)",
+              "c": "Ciclo de vida",
+              "d": "Transferencia acelerada"
+            },
+            "answer": "b",
+            "explanation": "La replicación entre regiones (CRR) de Amazon S3 permite copiar automáticamente objetos entre buckets en diferentes regiones AWS, ideal para cumplir con requisitos de recuperación ante desastres. El versionamiento es para mantener múltiples versiones de objetos, el ciclo de vida para gestionar la transición de objetos entre clases de almacenamiento, y la transferencia acelerada para mejorar la velocidad de transferencia."
+          },
+          {
+            "id": 65,
+            "type": "multiple",
+            "question": "¿Cuáles de los siguientes son componentes del pilar de Eficiencia del Rendimiento del AWS Well-Architected Framework? (Seleccione DOS)",
+            "options": {
+              "a": "Selección y optimización de recursos",
+              "b": "Gestión de cambios mediante automatización",
+              "c": "Monitoreo proactivo",
+              "d": "Protección de datos en reposo"
+            },
+            "answer": ["a", "c"],
+            "explanation": "El pilar de Eficiencia del Rendimiento incluye la selección y optimización de recursos para maximizar la eficiencia y el monitoreo proactivo para mantener el rendimiento. La gestión de cambios mediante automatización pertenece al pilar de Excelencia Operativa, y la protección de datos en reposo es parte del pilar de Seguridad."
+          },          
+          {
+            "id": 66,
+            "type": "single",
+            "question": "Una empresa necesita procesar archivos automáticamente cuando se cargan en un bucket de S3. ¿Qué servicio de AWS debería utilizar?",
+            "options": {
+              "a": "Amazon EC2",
+              "b": "AWS Lambda",
+              "c": "Amazon ECS",
+              "d": "AWS Batch"
+            },
+            "answer": "b",
+            "explanation": "AWS Lambda es ideal para procesar archivos automáticamente cuando se cargan en S3, ya que puede configurarse para activarse automáticamente en respuesta a eventos de S3 (como la carga de archivos) y ejecutar código sin aprovisionar servidores. EC2 requiere gestión manual, ECS es para contenedores, y Batch es para trabajos por lotes."
+          },          
+          {
+            "id": 67,
+            "type": "multiple",
+            "question": "¿Cuáles de las siguientes son responsabilidades de AWS según el Modelo de Responsabilidad Compartida? (Seleccione DOS)",
+            "options": {
+              "a": "Mantenimiento del hardware físico",
+              "b": "Configuración de grupos de seguridad",
+              "c": "Seguridad de la red global",
+              "d": "Gestión de parches del sistema operativo invitado"
+            },
+            "answer": ["a", "c"],
+            "explanation": "AWS es responsable del mantenimiento del hardware físico y la seguridad de la red global como parte de la 'seguridad DE la nube'. La configuración de grupos de seguridad y la gestión de parches del sistema operativo invitado son responsabilidades del cliente como parte de la 'seguridad EN la nube'."
+          },          
+          {
+            "id": 68,
+            "type": "single",
+            "question": "¿Qué servicio de AWS debería usar una empresa para implementar un repositorio de imágenes de contenedores?",
+            "options": {
+              "a": "Amazon S3",
+              "b": "Amazon ECR",
+              "c": "Amazon EFS",
+              "d": "AWS Artifact"
+            },
+            "answer": "b",
+            "explanation": "Amazon Elastic Container Registry (ECR) es un registro de contenedores completamente administrado que facilita a los desarrolladores almacenar, administrar y desplegar imágenes de contenedores Docker. S3 es para almacenamiento de objetos general, EFS es un sistema de archivos, y Artifact es para acceder a documentos de cumplimiento de AWS."
+          },          
+          {
+            "id": 69,
+            "type": "single",
+            "question": "Una empresa necesita una base de datos NoSQL con soporte para estructuras de datos de documentos. ¿Qué servicio de AWS es más apropiado?",
+            "options": {
+              "a": "Amazon Aurora",
+              "b": "Amazon DynamoDB",
+              "c": "Amazon RDS",
+              "d": "Amazon Redshift"
+            },
+            "answer": "b",
+            "explanation": "Amazon DynamoDB es una base de datos NoSQL que soporta tanto estructuras de datos de documentos como de clave-valor. Aurora y RDS son para bases de datos relacionales, y Redshift es un data warehouse diseñado para análisis."
+          },          
+          {
+            "id": 70,
+            "type": "multiple",
+            "question": "¿Cuáles son ventajas de utilizar el almacenamiento en caché en AWS? (Seleccione DOS)",
+            "options": {
+              "a": "Mejora el rendimiento de la aplicación",
+              "b": "Reduce la carga en la base de datos",
+              "c": "Aumenta la durabilidad de los datos",
+              "d": "Proporciona backup automático"
+            },
+            "answer": ["a", "b"],
+            "explanation": "El almacenamiento en caché mejora el rendimiento de la aplicación al proporcionar acceso rápido a datos frecuentemente accedidos y reduce la carga en la base de datos al eliminar consultas innecesarias. No está diseñado para aumentar la durabilidad de los datos o proporcionar backup."
+          },          
+          {
+            "id": 71,
+            "type": "single",
+            "question": "¿Qué servicio de AWS proporciona una forma de definir y provisionar infraestructura AWS usando código?",
+            "options": {
+              "a": "AWS Elastic Beanstalk",
+              "b": "AWS CloudFormation",
+              "c": "AWS OpsWorks",
+              "d": "AWS CodeDeploy"
+            },
+            "answer": "b",
+            "explanation": "AWS CloudFormation permite definir y provisionar infraestructura AWS usando código (Infrastructure as Code). Elastic Beanstalk es para desplegar aplicaciones web, OpsWorks es para automatización de operaciones usando Chef/Puppet, y CodeDeploy es para automatizar despliegues de aplicaciones."
+          },          
+          {
+            "id": 72,
+            "type": "single",
+            "question": "Una empresa necesita almacenar datos críticos con la más alta durabilidad posible. ¿Qué clase de almacenamiento de S3 debería usar?",
+            "options": {
+              "a": "S3 Standard",
+              "b": "S3 Intelligent-Tiering",
+              "c": "S3 One Zone-IA",
+              "d": "S3 Glacier Deep Archive"
+            },
+            "answer": "a",
+            "explanation": "S3 Standard ofrece la más alta durabilidad (99.999999999%) y disponibilidad (99.99%) entre todas las clases de almacenamiento S3. S3 One Zone-IA almacena datos en una sola zona de disponibilidad, reduciendo la durabilidad, mientras que Intelligent-Tiering y Glacier Deep Archive están optimizados para diferentes casos de uso."
+          },          
+          {
+            "id": 73,
+            "type": "multiple",
+            "question": "¿Cuáles son características de Amazon CloudFront? (Seleccione DOS)",
+            "options": {
+              "a": "Distribución global de contenido",
+              "b": "Almacenamiento permanente de datos",
+              "c": "Protección contra ataques DDoS",
+              "d": "Replicación de bases de datos"
+            },
+            "answer": ["a", "c"],
+            "explanation": "Amazon CloudFront es una red de entrega de contenido (CDN) que distribuye contenido globalmente y proporciona protección contra ataques DDoS a través de su integración con AWS Shield. No está diseñado para almacenamiento permanente de datos o replicación de bases de datos."
+          },          
+          {
+            "id": 74,
+            "type": "single",
+            "question": "¿Qué servicio AWS debería usar una empresa para realizar una evaluación de seguridad automatizada de sus aplicaciones en EC2?",
+            "options": {
+              "a": "AWS WAF",
+              "b": "Amazon Inspector",
+              "c": "Amazon GuardDuty",
+              "d": "AWS Shield"
+            },
+            "answer": "b",
+            "explanation": "Amazon Inspector es un servicio de evaluación de seguridad automatizado que ayuda a mejorar la seguridad y el cumplimiento de las aplicaciones desplegadas en AWS. WAF es para proteger aplicaciones web, GuardDuty es para detección de amenazas, y Shield es para protección DDoS."
+          },          
+          {
+            "id": 75,
+            "type": "single",
+            "question": "Una empresa necesita migrar una gran cantidad de datos a AWS y el ancho de banda de Internet disponible es limitado. ¿Qué servicio de AWS debería considerar?",
+            "options": {
+              "a": "AWS Direct Connect",
+              "b": "AWS Snowball",
+              "c": "AWS VPN",
+              "d": "Amazon S3 Transfer Acceleration"
+            },
+            "answer": "b",
+            "explanation": "AWS Snowball es ideal para transferir grandes cantidades de datos cuando el ancho de banda es limitado, ya que proporciona dispositivos físicos para la transferencia de datos. Direct Connect es para conexiones dedicadas, VPN es para conexiones seguras sobre Internet, y S3 Transfer Acceleration es para mejorar las velocidades de carga a S3."
+          },          
+          {
+            "id": 76,
+            "type": "multiple",
+            "question": "¿Cuáles son beneficios de utilizar AWS Organizations? (Seleccione DOS)",
+            "options": {
+              "a": "Facturación consolidada",
+              "b": "Políticas de control de servicios",
+              "c": "Backup automático de datos",
+              "d": "Monitoreo de rendimiento"
+            },
+            "answer": ["a", "b"],
+            "explanation": "AWS Organizations proporciona facturación consolidada para múltiples cuentas AWS y permite implementar políticas de control de servicios (SCP) para gestionar permisos en todas las cuentas. No proporciona funcionalidades de backup o monitoreo de rendimiento."
+          },          
+          {
+            "id": 77,
+            "type": "single",
+            "question": "¿Qué característica de AWS permite a los usuarios limitar el acceso a servicios y recursos AWS basado en la ubicación geográfica?",
+            "options": {
+              "a": "Security Groups",
+              "b": "Network ACLs",
+              "c": "IAM Policies",
+              "d": "Route Tables"
+            },
+            "answer": "c",
+            "explanation": "Las IAM Policies pueden incluir condiciones que restringen el acceso basado en la ubicación geográfica del solicitante usando la condición 'aws:SourceIp'. Security Groups y Network ACLs operan a nivel de red y no pueden restringir acceso basado en geografía, y las Route Tables son para enrutamiento de red."
+          },          
+          {
+            "id": 78,
+            "type": "single",
+            "question": "Una empresa necesita ejecutar cargas de trabajo que requieren GPU para procesamiento de aprendizaje profundo. ¿Qué tipo de instancia EC2 debería usar?",
+            "options": {
+              "a": "Instancias M5",
+              "b": "Instancias C5",
+              "c": "Instancias P3",
+              "d": "Instancias T3"
+            },
+            "answer": "c",
+            "explanation": "Las instancias P3 están optimizadas para cargas de trabajo de aprendizaje profundo y proporcionan GPUs NVIDIA Tesla V100. Las instancias M5 son de propósito general, C5 están optimizadas para computación, y T3 son de rendimiento expandible."
+          },          
+          {
+            "id": 79,
+            "type": "single",
+            "question": "¿Qué servicio AWS permite evaluar automáticamente las configuraciones de recursos y compararlas con las mejores prácticas de seguridad?",
+            "options": {
+              "a": "AWS Config",
+              "b": "AWS CloudTrail",
+              "c": "Amazon CloudWatch",
+              "d": "AWS Systems Manager"
+            },
+            "answer": "a",
+            "explanation": "AWS Config permite evaluar las configuraciones de sus recursos AWS y compararlas con las mejores prácticas de seguridad. CloudTrail es para auditoría de API, CloudWatch es para monitoreo de recursos, y Systems Manager es para operaciones y gestión de aplicaciones."
+          },
+          {
+            "id": 80,
+            "type": "multiple",
+            "question": "¿Cuáles de los siguientes son métodos para interactuar con la API de AWS? (Seleccione DOS)",
+            "options": {
+              "a": "AWS Command Line Interface (CLI)",
+              "b": "AWS Control Tower",
+              "c": "AWS Software Development Kit (SDK)",
+              "d": "AWS Config"
+            },
+            "answer": ["a", "c"],
+            "explanation": "AWS CLI y AWS SDK son herramientas oficiales para interactuar con la API de AWS. La CLI proporciona una interfaz de línea de comandos, mientras que los SDKs permiten integrar servicios AWS en aplicaciones usando varios lenguajes de programación. AWS Control Tower es para gobierno de múltiples cuentas y Config es para evaluación de recursos."
+          },          
+          {
+            "id": 81,
+            "type": "single",
+            "question": "Una empresa necesita una base de datos relacional con alta disponibilidad. ¿Qué configuración de Amazon RDS debería implementar?",
+            "options": {
+              "a": "Implementación en múltiples regiones",
+              "b": "Implementación Multi-AZ",
+              "c": "Read Replicas",
+              "d": "Backup automático"
+            },
+            "answer": "b",
+            "explanation": "La implementación Multi-AZ de Amazon RDS proporciona alta disponibilidad mediante la replicación sincrónica en una zona de disponibilidad diferente. En caso de fallo, RDS automáticamente cambia a la base de datos secundaria. Las Read Replicas son para escalabilidad de lectura, los backups son para recuperación de datos, y la implementación multi-región es para recuperación ante desastres."
+          },          
+          {
+            "id": 82,
+            "type": "multiple",
+            "question": "¿Cuáles son ventajas de utilizar AWS Auto Scaling? (Seleccione DOS)",
+            "options": {
+              "a": "Mejor disponibilidad de aplicaciones",
+              "b": "Reducción de costos operativos",
+              "c": "Acceso directo al hardware subyacente",
+              "d": "Backup automático de datos"
+            },
+            "answer": ["a", "b"],
+            "explanation": "AWS Auto Scaling proporciona mejor disponibilidad al mantener el rendimiento óptimo de las aplicaciones y reduce costos operativos al escalar recursos según la demanda. No proporciona acceso al hardware subyacente ni realiza backups automáticos, ya que estas son funcionalidades de otros servicios AWS."
+          },          
+          {
+            "id": 83,
+            "type": "single",
+            "question": "¿Qué servicio de AWS permite a los usuarios configurar alertas cuando el uso de recursos excede los umbrales definidos?",
+            "options": {
+              "a": "AWS CloudTrail",
+              "b": "Amazon CloudWatch",
+              "c": "AWS Config",
+              "d": "AWS Systems Manager"
+            },
+            "answer": "b",
+            "explanation": "Amazon CloudWatch permite configurar alarmas que monitorean métricas y se activan cuando se exceden los umbrales definidos. CloudTrail es para auditoría de actividad de API, Config es para evaluación de configuraciones, y Systems Manager es para operaciones y gestión de aplicaciones."
+          },          
+          {
+            "id": 84,
+            "type": "single",
+            "question": "¿Qué servicio de AWS proporciona un almacén de contraseñas centralizado con rotación automática de credenciales?",
+            "options": {
+              "a": "AWS KMS",
+              "b": "AWS Secrets Manager",
+              "c": "AWS Certificate Manager",
+              "d": "AWS IAM"
+            },
+            "answer": "b",
+            "explanation": "AWS Secrets Manager ayuda a proteger el acceso a sus aplicaciones, servicios y recursos. Permite rotar, gestionar y recuperar automáticamente credenciales de bases de datos, claves de API y otros secretos. KMS es para gestión de claves de cifrado, Certificate Manager es para certificados SSL/TLS, e IAM es para gestión de identidades y accesos."
+          },          
+          {
+            "id": 85,
+            "type": "multiple",
+            "question": "¿Cuáles son características del modelo de precios de AWS? (Seleccione DOS)",
+            "options": {
+              "a": "Pago por uso",
+              "b": "Sin costos de cancelación",
+              "c": "Contratos a largo plazo obligatorios",
+              "d": "Precios fijos independientes del uso"
+            },
+            "answer": ["a", "b"],
+            "explanation": "AWS utiliza un modelo de precios de pago por uso sin costos de cancelación, lo que permite a los clientes pagar solo por los recursos que consumen y cambiar o cancelar servicios sin penalización. No requiere contratos a largo plazo (aunque están disponibles para descuentos) y los precios varían según el uso."
+          },          
+          {
+            "id": 86,
+            "type": "single",
+            "question": "Una empresa necesita analizar grandes conjuntos de datos no estructurados almacenados en S3. ¿Qué servicio de AWS es más apropiado?",
+            "options": {
+              "a": "Amazon Redshift",
+              "b": "Amazon EMR",
+              "c": "Amazon RDS",
+              "d": "Amazon DynamoDB"
+            },
+            "answer": "b",
+            "explanation": "Amazon EMR (Elastic MapReduce) es ideal para procesar grandes cantidades de datos no estructurados usando frameworks como Hadoop y Spark. Redshift es para data warehousing estructurado, RDS es para bases de datos relacionales, y DynamoDB es una base de datos NoSQL para datos estructurados."
+          },          
+          {
+            "id": 87,
+            "type": "single",
+            "question": "¿Qué servicio debería usar una empresa para enviar notificaciones a sus usuarios a través de múltiples canales como email y SMS?",
+            "options": {
+              "a": "Amazon SQS",
+              "b": "Amazon SNS",
+              "c": "Amazon MQ",
+              "d": "Amazon Pinpoint"
+            },
+            "answer": "b",
+            "explanation": "Amazon SNS (Simple Notification Service) permite enviar mensajes a múltiples suscriptores a través de varios protocolos, incluyendo email y SMS. SQS es para colas de mensajes, MQ es para mensajería empresarial, y Pinpoint es para marketing y comunicaciones personalizadas."
+          },          
+          {
+            "id": 88,
+            "type": "multiple",
+            "question": "¿Cuáles son beneficios de usar AWS CloudFormation? (Seleccione DOS)",
+            "options": {
+              "a": "Automatización de infraestructura",
+              "b": "Control de versiones de infraestructura",
+              "c": "Monitoreo de rendimiento",
+              "d": "Backup de datos"
+            },
+            "answer": ["a", "b"],
+            "explanation": "AWS CloudFormation permite automatizar el despliegue de infraestructura y mantener control de versiones de las configuraciones de infraestructura mediante plantillas. No proporciona monitoreo de rendimiento ni backup de datos, ya que estas son funcionalidades de otros servicios AWS."
+          },          
+          {
+            "id": 89,
+            "type": "single",
+            "question": "¿Qué tecnología AWS ayuda a proteger aplicaciones web contra ataques comunes como SQL injection y cross-site scripting?",
+            "options": {
+              "a": "AWS Shield",
+              "b": "AWS WAF",
+              "c": "Security Groups",
+              "d": "Network ACLs"
+            },
+            "answer": "b",
+            "explanation": "AWS WAF (Web Application Firewall) protege las aplicaciones web contra ataques comunes como SQL injection y cross-site scripting mediante reglas personalizables. Shield es para protección DDoS, y Security Groups y Network ACLs operan a nivel de red."
+          },          
+          {
+            "id": 90,
+            "type": "single",
+            "question": "Una empresa necesita mover grandes cantidades de datos desde sus instalaciones a Amazon S3 de manera rentable. ¿Qué servicio de AWS debería utilizar?",
+            "options": {
+              "a": "AWS DataSync",
+              "b": "AWS Storage Gateway",
+              "c": "AWS Snowball",
+              "d": "AWS Direct Connect"
+            },
+            "answer": "c",
+            "explanation": "AWS Snowball es ideal para transferir grandes cantidades de datos de manera rentable cuando el ancho de banda es limitado o costoso. DataSync es para sincronización continua, Storage Gateway es para integración híbrida, y Direct Connect es para conexiones de red dedicadas."
+          },          
+          {
+            "id": 91,
+            "type": "multiple",
+            "question": "¿Qué opciones de implementación ofrece Amazon RDS? (Seleccione DOS)",
+            "options": {
+              "a": "Implementación Multi-AZ",
+              "b": "Read Replicas",
+              "c": "Implementación multi-cuenta",
+              "d": "Implementación multi-región sincrónica"
+            },
+            "answer": ["a", "b"],
+            "explanation": "Amazon RDS ofrece implementación Multi-AZ para alta disponibilidad y Read Replicas para escalabilidad de lectura. La implementación multi-cuenta no es una opción nativa de RDS, y la replicación multi-región sincrónica no está disponible (solo asincrónica a través de Read Replicas)."
+          },          
+          {
+            "id": 92,
+            "type": "single",
+            "question": "¿Qué servicio de AWS proporciona recomendaciones para optimizar costos y mejorar la seguridad?",
+            "options": {
+              "a": "AWS Cost Explorer",
+              "b": "AWS Trusted Advisor",
+              "c": "AWS Budgets",
+              "d": "AWS Config"
+            },
+            "answer": "b",
+            "explanation": "AWS Trusted Advisor proporciona recomendaciones en tiempo real para optimizar su entorno AWS en cinco categorías: optimización de costos, rendimiento, seguridad, tolerancia a fallos y límites de servicio. Cost Explorer es para análisis de costos, Budgets es para presupuestos, y Config es para auditoría de recursos."
+          },          
+          {
+            "id": 93,
+            "type": "single",
+            "question": "Una empresa quiere desplegar rápidamente aplicaciones web sin preocuparse por la infraestructura subyacente. ¿Qué servicio AWS debería usar?",
+            "options": {
+              "a": "AWS Elastic Beanstalk",
+              "b": "Amazon EC2",
+              "c": "AWS CloudFormation",
+              "d": "Amazon ECS"
+            },
+            "answer": "a",
+            "explanation": "AWS Elastic Beanstalk es una plataforma como servicio (PaaS) que facilita el despliegue rápido de aplicaciones web sin preocuparse por la infraestructura subyacente. EC2 requiere gestión manual, CloudFormation es para infraestructura como código, y ECS es para contenedores."
+          },          
+          {
+            "id": 94,
+            "type": "multiple",
+            "question": "¿Cuáles son características de Amazon S3 Glacier? (Seleccione DOS)",
+            "options": {
+              "a": "Almacenamiento de bajo costo",
+              "b": "Acceso inmediato a los datos",
+              "c": "Tiempo de recuperación en horas",
+              "d": "Alta frecuencia de acceso"
+            },
+            "answer": ["a", "c"],
+            "explanation": "Amazon S3 Glacier es una clase de almacenamiento de bajo costo diseñada para archivo de datos con tiempos de recuperación que van desde minutos a horas. No está diseñado para acceso inmediato o frecuente a los datos, ya que estos son casos de uso mejor atendidos por otras clases de almacenamiento S3."
+          },
+          {
+            "id": 95,
+            "type": "multiple",
+            "question": "¿Cuáles de las siguientes son prácticas recomendadas para la seguridad de la cuenta root de AWS? (Seleccione DOS)",
+            "options": {
+              "a": "Habilitar MFA en la cuenta root",
+              "b": "Usar la cuenta root para tareas administrativas diarias",
+              "c": "Eliminar las claves de acceso de la cuenta root",
+              "d": "Compartir las credenciales root con el equipo de administradores"
+            },
+            "answer": ["a", "c"],
+            "explanation": "Las mejores prácticas de seguridad para la cuenta root incluyen habilitar MFA y eliminar las claves de acceso. La cuenta root no debe usarse para tareas diarias ni compartirse con otros usuarios. En su lugar, se deben crear usuarios IAM individuales con los permisos necesarios."
+          },          
+          {
+            "id": 96,
+            "type": "single",
+            "question": "Una empresa necesita mantener copias de sus datos de producción en otra región de AWS para recuperación ante desastres. ¿Qué solución es la más apropiada?",
+            "options": {
+              "a": "Backup regular a S3 en la misma región",
+              "b": "Replicación cross-region de S3",
+              "c": "Snapshots de EBS en la misma región",
+              "d": "Almacenamiento en S3 Glacier"
+            },
+            "answer": "b",
+            "explanation": "La replicación cross-region de S3 permite copiar automáticamente objetos de un bucket a otro en una región diferente, lo que es ideal para estrategias de recuperación ante desastres. Los backups en la misma región no protegen contra fallos regionales, y S3 Glacier está diseñado para archivo a largo plazo, no para recuperación ante desastres."
+          },          
+          {
+            "id": 97,
+            "type": "multiple",
+            "question": "¿Qué acciones puede realizar AWS Shield Advanced? (Seleccione DOS)",
+            "options": {
+              "a": "Proteger contra ataques DDoS a nivel de red",
+              "b": "Cifrar datos en reposo",
+              "c": "Proporcionar protección contra ataques a nivel de aplicación",
+              "d": "Administrar claves de cifrado"
+            },
+            "answer": ["a", "c"],
+            "explanation": "AWS Shield Advanced proporciona protección contra ataques DDoS tanto a nivel de red como de aplicación. El cifrado de datos y la administración de claves son funcionalidades proporcionadas por otros servicios como AWS KMS y servicios de almacenamiento con cifrado integrado."
+          },          
+          {
+            "id": 98,
+            "type": "single",
+            "question": "¿Qué servicio de AWS permite a los desarrolladores crear, publicar y gestionar APIs REST y WebSocket?",
+            "options": {
+              "a": "AWS Lambda",
+              "b": "Amazon API Gateway",
+              "c": "AWS Elastic Beanstalk",
+              "d": "Amazon CloudFront"
+            },
+            "answer": "b",
+            "explanation": "Amazon API Gateway es un servicio completamente administrado que facilita a los desarrolladores la creación, publicación, mantenimiento, monitoreo y protección de APIs a cualquier escala. Lambda es para computación serverless, Elastic Beanstalk para desplegar aplicaciones web, y CloudFront es una CDN."
+          },          
+          {
+            "id": 99,
+            "type": "single",
+            "question": "Una empresa necesita una solución rentable para almacenar datos de registro que rara vez se acceden pero deben conservarse por 7 años por motivos de cumplimiento. ¿Qué servicio de AWS es el más apropiado?",
+            "options": {
+              "a": "Amazon S3 Standard",
+              "b": "Amazon S3 Glacier Deep Archive",
+              "c": "Amazon S3 Standard-IA",
+              "d": "Amazon EBS"
+            },
+            "answer": "b",
+            "explanation": "Amazon S3 Glacier Deep Archive es la opción más económica para el almacenamiento a largo plazo de datos que rara vez se acceden, como datos de cumplimiento normativo que deben conservarse durante años. Ofrece el costo más bajo de almacenamiento con tiempos de recuperación de hasta 48 horas."
+          },          
+          {
+            "id": 100,
+            "type": "multiple",
+            "question": "¿Cuáles de los siguientes son beneficios de utilizar instancias reservadas de EC2? (Seleccione DOS)",
+            "options": {
+              "a": "Descuentos significativos en comparación con instancias on-demand",
+              "b": "Capacidad garantizada para una zona de disponibilidad específica",
+              "c": "Flexibilidad para cambiar el tipo de instancia en cualquier momento",
+              "d": "Sin compromiso de pago inicial"
+            },
+            "answer": ["a", "b"],
+            "explanation": "Las instancias reservadas de EC2 ofrecen descuentos significativos (hasta 75%) en comparación con instancias on-demand y proporcionan capacidad garantizada en una zona de disponibilidad específica cuando se reserva. El tipo de instancia no se puede cambiar libremente, y algunas opciones de RI requieren pago inicial."
+          },          
+          {
+            "id": 101,
+            "type": "single",
+            "question": "¿Qué característica de AWS permite a los usuarios restringir el acceso a servicios y recursos basándose en etiquetas?",
+            "options": {
+              "a": "Security Groups",
+              "b": "IAM Policies",
+              "c": "Network ACLs",
+              "d": "VPC Endpoints"
+            },
+            "answer": "b",
+            "explanation": "Las IAM Policies pueden incluir condiciones que restringen el acceso basándose en etiquetas adjuntas a recursos AWS. Esto permite un control de acceso granular basado en atributos. Security Groups y Network ACLs operan a nivel de red, y VPC Endpoints son para acceso privado a servicios AWS."
+          },          
+          {
+            "id": 102,
+            "type": "single",
+            "question": "Una empresa necesita implementar un proceso de aprobación para todos los cambios en su infraestructura AWS. ¿Qué servicio debería utilizar?",
+            "options": {
+              "a": "AWS CloudFormation",
+              "b": "AWS Service Catalog",
+              "c": "AWS Systems Manager",
+              "d": "AWS Config"
+            },
+            "answer": "b",
+            "explanation": "AWS Service Catalog permite a las organizaciones crear y gestionar catálogos de servicios aprobados para uso en AWS, incluyendo procesos de aprobación para cambios. CloudFormation es para automatización de infraestructura, Systems Manager para operaciones, y Config para auditoría de recursos."
+          },          
+          {
+            "id": 103,
+            "type": "multiple",
+            "question": "¿Cuáles son características del soporte Business de AWS? (Seleccione DOS)",
+            "options": {
+              "a": "Soporte 24/7 por teléfono y email",
+              "b": "Technical Account Manager (TAM) dedicado",
+              "c": "Acceso a AWS Trusted Advisor",
+              "d": "Soporte solo en horario laboral"
+            },
+            "answer": ["a", "c"],
+            "explanation": "El plan Business Support incluye soporte 24/7 por teléfono y email, así como acceso completo a AWS Trusted Advisor. No incluye un TAM dedicado (característica del Enterprise Support) y no está limitado a horario laboral."
+          },          
+          {
+            "id": 104,
+            "type": "single",
+            "question": "¿Qué servicio de AWS ayuda a los usuarios a entender mejor sus patrones de uso y costos a lo largo del tiempo?",
+            "options": {
+              "a": "AWS Budgets",
+              "b": "AWS Cost Explorer",
+              "c": "AWS Pricing Calculator",
+              "d": "AWS Organizations"
+            },
+            "answer": "b",
+            "explanation": "AWS Cost Explorer proporciona una interfaz para visualizar y analizar sus costos y uso de AWS a lo largo del tiempo. Budgets es para establecer presupuestos y alertas, Pricing Calculator para estimar costos futuros, y Organizations para gestión de múltiples cuentas."
+          },          
+          {
+            "id": 105,
+            "type": "single",
+            "question": "Una empresa necesita una solución de base de datos que ofrezca microsegundos de latencia para aplicaciones de juegos. ¿Qué servicio de AWS es el más apropiado?",
+            "options": {
+              "a": "Amazon RDS",
+              "b": "Amazon DynamoDB",
+              "c": "Amazon Redshift",
+              "d": "Amazon Neptune"
+            },
+            "answer": "b",
+            "explanation": "Amazon DynamoDB está diseñado para proporcionar latencia consistente en microsegundos para aplicaciones que requieren rendimiento a escala. RDS es para bases de datos relacionales tradicionales, Redshift para data warehousing, y Neptune para bases de datos de grafos."
+          },          
+          {
+            "id": 106,
+            "type": "multiple",
+            "question": "¿Cuáles son características de Amazon CloudWatch Logs? (Seleccione DOS)",
+            "options": {
+              "a": "Monitoreo en tiempo real de logs",
+              "b": "Cifrado automático de logs",
+              "c": "Auditoría de llamadas a la API",
+              "d": "Replicación entre regiones de logs"
+            },
+            "answer": ["a", "b"],
+            "explanation": "CloudWatch Logs proporciona monitoreo en tiempo real de logs y cifrado automático de los datos de log. La auditoría de llamadas a la API es una función de CloudTrail, y aunque los logs pueden enviarse a múltiples regiones, no existe replicación automática entre regiones."
+          },          
+          {
+            "id": 107,
+            "type": "single",
+            "question": "¿Qué servicio de AWS debe usar una empresa para implementar un proceso de CI/CD completamente administrado?",
+            "options": {
+              "a": "AWS CodePipeline",
+              "b": "AWS Elastic Beanstalk",
+              "c": "AWS OpsWorks",
+              "d": "AWS CloudFormation"
+            },
+            "answer": "a",
+            "explanation": "AWS CodePipeline es un servicio de entrega continua completamente administrado que ayuda a automatizar los pipelines de lanzamiento para actualizaciones rápidas y confiables de aplicaciones e infraestructura. Elastic Beanstalk es para despliegue de aplicaciones, OpsWorks para gestión de configuración, y CloudFormation para infraestructura como código."
+          },          
+          {
+            "id": 108,
+            "type": "single",
+            "question": "Una aplicación necesita almacenar datos en caché con latencia de microsegundos. ¿Qué servicio de AWS debería utilizar?",
+            "options": {
+              "a": "Amazon ElastiCache",
+              "b": "Amazon DynamoDB",
+              "c": "Amazon RDS",
+              "d": "Amazon S3"
+            },
+            "answer": "a",
+            "explanation": "Amazon ElastiCache es un servicio de caché en memoria completamente administrado que soporta Redis y Memcached, proporcionando latencia de microsegundos para aplicaciones que requieren acceso rápido a datos. DynamoDB es una base de datos NoSQL, RDS para bases de datos relacionales, y S3 para almacenamiento de objetos."
+          },          
+          {
+            "id": 109,
+            "type": "multiple",
+            "question": "¿Cuáles son beneficios de utilizar AWS Organizations? (Seleccione DOS)",
+            "options": {
+              "a": "Facturación consolidada para múltiples cuentas",
+              "b": "Políticas de control de servicios centralizadas",
+              "c": "Backup automático de datos entre cuentas",
+              "d": "Replicación automática de recursos"
+            },
+            "answer": ["a", "b"],
+            "explanation": "AWS Organizations proporciona facturación consolidada para múltiples cuentas AWS y permite implementar políticas de control de servicios (SCP) centralizadas. No proporciona backup automático entre cuentas ni replicación automática de recursos, ya que estas son funcionalidades de otros servicios AWS."
+          },
+          {
+            "id": 110,
+            "type": "multiple",
+            "question": "¿Cuáles de los siguientes son pilares de sostenibilidad del AWS Well-Architected Framework? (Seleccione DOS)",
+            "options": {
+              "a": "Optimizar el uso de recursos de cómputo",
+              "b": "Maximizar la utilización de red",
+              "c": "Reducir el impacto downstream de sus cargas de trabajo en la nube",
+              "d": "Incrementar el número de servidores"
+            },
+            "answer": ["a", "c"],
+            "explanation": "El pilar de sostenibilidad del AWS Well-Architected Framework se centra en minimizar el impacto ambiental del uso de la nube. Optimizar el uso de recursos y reducir el impacto downstream son prácticas clave. Maximizar el uso de red sin necesidad y aumentar servidores innecesariamente van en contra de los principios de sostenibilidad."
+          },          
+          {
+            "id": 111,
+            "type": "single",
+            "question": "Una empresa necesita un servicio que permita a sus desarrolladores desplegar y gestionar contenedores sin preocuparse por la infraestructura subyacente. ¿Qué solución de AWS es la más apropiada?",
+            "options": {
+              "a": "Amazon ECS con EC2",
+              "b": "Amazon ECS con Fargate",
+              "c": "Amazon EC2",
+              "d": "AWS Elastic Beanstalk"
+            },
+            "answer": "b",
+            "explanation": "Amazon ECS con Fargate es una solución serverless que permite ejecutar contenedores sin tener que gestionar la infraestructura subyacente. ECS con EC2 requiere gestionar instancias EC2, EC2 solo proporciona servidores virtuales, y Elastic Beanstalk está diseñado principalmente para aplicaciones web tradicionales."
+          },          
+          {
+            "id": 112,
+            "type": "single",
+            "question": "¿Qué servicio de AWS debe utilizar una empresa para recibir descuentos por volumen basados en el uso agregado de todas sus cuentas AWS?",
+            "options": {
+              "a": "AWS Cost Explorer",
+              "b": "AWS Organizations",
+              "c": "AWS Budgets",
+              "d": "AWS Pricing Calculator"
+            },
+            "answer": "b",
+            "explanation": "AWS Organizations permite la facturación consolidada, que combina el uso de todas las cuentas de la organización para recibir descuentos por volumen. Cost Explorer es para análisis de costos, Budgets para establecer presupuestos, y Pricing Calculator para estimar costos futuros."
+          },          
+          {
+            "id": 113,
+            "type": "multiple",
+            "question": "¿Cuáles son ventajas de utilizar Amazon RDS sobre instalar una base de datos en EC2? (Seleccione DOS)",
+            "options": {
+              "a": "Parches automáticos del sistema operativo",
+              "b": "Backups automatizados",
+              "c": "Acceso root al servidor de base de datos",
+              "d": "Personalización completa del motor de base de datos"
+            },
+            "answer": ["a", "b"],
+            "explanation": "Amazon RDS es un servicio administrado que automatiza tareas como los parches del sistema operativo y los backups. No proporciona acceso root ni permite personalización completa del motor de base de datos, ya que estos aspectos son gestionados por AWS para garantizar la seguridad y facilidad de administración."
+          },          
+          {
+            "id": 114,
+            "type": "single",
+            "question": "Un equipo de desarrollo necesita probar una nueva aplicación con diferentes configuraciones de recursos AWS. ¿Qué servicio permite crear y eliminar recursos de forma automática y repetible?",
+            "options": {
+              "a": "AWS CloudFormation",
+              "b": "AWS Config",
+              "c": "AWS Systems Manager",
+              "d": "AWS OpsWorks"
+            },
+            "answer": "a",
+            "explanation": "AWS CloudFormation permite crear y gestionar recursos AWS mediante plantillas, facilitando la creación y eliminación automática de infraestructura de manera repetible. Config es para auditoría de recursos, Systems Manager para operaciones, y OpsWorks para gestión de configuración."
+          },          
+          {
+            "id": 115,
+            "type": "single",
+            "question": "¿Qué servicio de AWS proporciona un punto de acceso único para gestionar múltiples cuentas AWS, cumplimiento y seguridad?",
+            "options": {
+              "a": "AWS Control Tower",
+              "b": "AWS Organizations",
+              "c": "AWS Systems Manager",
+              "d": "AWS Config"
+            },
+            "answer": "a",
+            "explanation": "AWS Control Tower proporciona una manera de configurar y gobernar un entorno AWS multi-cuenta seguro y conforme. Ofrece un punto de acceso único para configurar y gestionar un entorno que sigue las mejores prácticas. Organizations es para gestión de cuentas, Systems Manager para operaciones, y Config para auditoría de recursos."
+          },          
+          {
+            "id": 116,
+            "type": "multiple",
+            "question": "¿Cuáles son características de las instancias spot de EC2? (Seleccione DOS)",
+            "options": {
+              "a": "Precios significativamente más bajos que las instancias on-demand",
+              "b": "Pueden ser interrumpidas con aviso de 2 minutos",
+              "c": "Garantía de disponibilidad continua",
+              "d": "Ideal para cargas de trabajo críticas"
+            },
+            "answer": ["a", "b"],
+            "explanation": "Las instancias spot ofrecen precios significativamente más bajos (hasta 90% de descuento) comparado con instancias on-demand, pero pueden ser interrumpidas con un aviso de 2 minutos cuando AWS necesita recuperar la capacidad. No son adecuadas para cargas de trabajo críticas que requieren disponibilidad continua."
+          },          
+          {
+            "id": 117,
+            "type": "single",
+            "question": "¿Qué servicio de AWS debe usar una empresa para identificar automáticamente información sensible como números de tarjetas de crédito en los datos almacenados en S3?",
+            "options": {
+              "a": "Amazon Inspector",
+              "b": "Amazon Macie",
+              "c": "AWS Config",
+              "d": "Amazon GuardDuty"
+            },
+            "answer": "b",
+            "explanation": "Amazon Macie es un servicio de seguridad que usa machine learning para descubrir y proteger automáticamente datos sensibles en AWS. Puede identificar información personal sensible como números de tarjetas de crédito en S3. Inspector es para evaluación de seguridad de EC2, Config para auditoría de recursos, y GuardDuty para detección de amenazas."
+          },          
+          {
+            "id": 118,
+            "type": "single",
+            "question": "Una empresa necesita una solución de almacenamiento de archivos que pueda escalar automáticamente sin necesidad de aprovisionar capacidad. ¿Qué servicio de AWS debería usar?",
+            "options": {
+              "a": "Amazon EBS",
+              "b": "Amazon EFS",
+              "c": "Amazon S3",
+              "d": "EC2 Instance Store"
+            },
+            "answer": "b",
+            "explanation": "Amazon EFS proporciona un sistema de archivos elástico que escala automáticamente según sea necesario, sin necesidad de aprovisionar capacidad. EBS requiere especificar el tamaño al crear el volumen, S3 es para almacenamiento de objetos, y Instance Store es almacenamiento temporal."
+          },          
+          {
+            "id": 119,
+            "type": "multiple",
+            "question": "¿Qué elementos deben considerarse al calcular el Costo Total de Propiedad (TCO) al migrar a AWS? (Seleccione DOS)",
+            "options": {
+              "a": "Costos de energía y refrigeración del centro de datos",
+              "b": "Costos de licencias de software",
+              "c": "Costos de desarrollo de aplicaciones",
+              "d": "Salarios de desarrolladores"
+            },
+            "answer": ["a", "b"],
+            "explanation": "Al calcular el TCO para migrar a AWS, se deben considerar los costos que se eliminarán, como energía y refrigeración del centro de datos, y los costos que pueden cambiar, como las licencias de software. Los costos de desarrollo de aplicaciones y salarios generalmente no cambian significativamente con la migración."
+          },          
+          {
+            "id": 120,
+            "type": "single",
+            "question": "¿Qué característica de AWS permite a los usuarios programar el inicio y detención automática de instancias EC2 para reducir costos?",
+            "options": {
+              "a": "AWS Auto Scaling",
+              "b": "AWS Systems Manager",
+              "c": "Amazon EventBridge",
+              "d": "AWS Config"
+            },
+            "answer": "c",
+            "explanation": "Amazon EventBridge (anteriormente CloudWatch Events) permite programar eventos que pueden iniciar y detener instancias EC2 automáticamente en horarios específicos. Auto Scaling es para ajustar capacidad según demanda, Systems Manager es para operaciones, y Config es para auditoría de recursos."
+          },          
+          {
+            "id": 121,
+            "type": "single",
+            "question": "Una empresa necesita cifrar automáticamente todos los objetos nuevos almacenados en S3. ¿Qué solución debería implementar?",
+            "options": {
+              "a": "Cifrado del lado del servidor con claves administradas por S3 (SSE-S3)",
+              "b": "Cifrado del lado del cliente",
+              "c": "AWS KMS personalizado",
+              "d": "Políticas de bucket"
+            },
+            "answer": "a",
+            "explanation": "El cifrado del lado del servidor con claves administradas por S3 (SSE-S3) es la forma más simple de cifrar automáticamente nuevos objetos en S3. Se aplica automáticamente a todos los objetos nuevos y AWS gestiona todas las claves. El cifrado del lado del cliente requiere más gestión, KMS personalizado es más complejo, y las políticas de bucket son para control de acceso."
+          },          
+          {
+            "id": 122,
+            "type": "multiple",
+            "question": "¿Cuáles son características del AWS Enterprise Support? (Seleccione DOS)",
+            "options": {
+              "a": "Acceso a un Technical Account Manager (TAM)",
+              "b": "Tiempo de respuesta de menos de 15 minutos para casos críticos",
+              "c": "Soporte solo durante horario laboral",
+              "d": "Acceso limitado a AWS Trusted Advisor"
+            },
+            "answer": ["a", "b"],
+            "explanation": "El plan Enterprise Support incluye acceso a un TAM dedicado y tiempos de respuesta de menos de 15 minutos para casos críticos. Proporciona soporte 24/7 (no solo horario laboral) y acceso completo a AWS Trusted Advisor, no limitado."
+          },          
+          {
+            "id": 123,
+            "type": "single",
+            "question": "Una empresa necesita analizar y visualizar datos de logs en tiempo real. ¿Qué servicio de AWS debería utilizar?",
+            "options": {
+              "a": "Amazon Athena",
+              "b": "Amazon QuickSight",
+              "c": "Amazon CloudWatch Logs Insights",
+              "d": "Amazon Redshift"
+            },
+            "answer": "c",
+            "explanation": "Amazon CloudWatch Logs Insights está diseñado específicamente para analizar datos de logs en tiempo real, proporcionando una manera eficiente de buscar y visualizar datos de log. Athena es para consultas SQL en S3, QuickSight es para business intelligence, y Redshift es un data warehouse."
+          },          
+          {
+            "id": 124,
+            "type": "single",
+            "question": "¿Qué servicio de AWS permitiría a una empresa identificar qué usuarios o roles de IAM no se han utilizado en los últimos 90 días?",
+            "options": {
+              "a": "AWS CloudTrail",
+              "b": "AWS IAM Access Analyzer",
+              "c": "AWS Config",
+              "d": "AWS IAM Credential Report"
+            },
+            "answer": "d",
+            "explanation": "El IAM Credential Report proporciona información sobre cuándo se utilizaron por última vez las credenciales de los usuarios, lo que ayuda a identificar cuentas inactivas. CloudTrail es para auditoría de API, IAM Access Analyzer es para analizar políticas, y Config es para auditoría de recursos."
+          },
+          {
+            "id": 125,
+            "type": "multiple",
+            "question": "¿Cuáles de las siguientes son características del modelo de precios de AWS? (Seleccione DOS)",
+            "options": {
+              "a": "Capacidad de cambiar recursos cuando sea necesario",
+              "b": "Pago por recursos reservados incluso si no se usan",
+              "c": "Pago solo por lo que se usa",
+              "d": "Compromiso a largo plazo obligatorio"
+            },
+            "answer": ["a", "c"],
+            "explanation": "El modelo de precios de AWS se caracteriza por permitir a los clientes pagar solo por lo que usan y la capacidad de cambiar recursos según sus necesidades. No requiere compromisos a largo plazo obligatorios (aunque están disponibles para descuentos) ni exige pago por recursos reservados no utilizados."
+          },          
+          {
+            "id": 126,
+            "type": "single",
+            "question": "¿Qué servicio de AWS proporciona la forma más rentable de almacenar datos de backup que rara vez se acceden y pueden ser recuperados dentro de 12 horas?",
+            "options": {
+              "a": "Amazon S3 Standard",
+              "b": "Amazon S3 Glacier Flexible Retrieval",
+              "c": "Amazon S3 Standard-IA",
+              "d": "Amazon EFS"
+            },
+            "answer": "b",
+            "explanation": "Amazon S3 Glacier Flexible Retrieval es ideal para datos de backup que rara vez se acceden y pueden ser recuperados dentro de 12 horas, ofreciendo el costo más bajo por GB. S3 Standard y Standard-IA son más costosos y diseñados para datos que requieren acceso más frecuente, mientras que EFS es un sistema de archivos y no está optimizado para backups de largo plazo."
+          },          
+          {
+            "id": 127,
+            "type": "single",
+            "question": "Una empresa necesita asegurarse de que sus recursos AWS cumplan con estándares de seguridad internos. ¿Qué servicio debería utilizar?",
+            "options": {
+              "a": "AWS Config",
+              "b": "AWS CloudTrail",
+              "c": "Amazon Inspector",
+              "d": "AWS Trusted Advisor"
+            },
+            "answer": "a",
+            "explanation": "AWS Config permite evaluar, auditar y evaluar las configuraciones de sus recursos AWS contra estándares definidos. Puede crear reglas personalizadas para verificar el cumplimiento de políticas internas. CloudTrail es para auditoría de actividad API, Inspector para evaluación de vulnerabilidades, y Trusted Advisor para recomendaciones generales."
+          },          
+          {
+            "id": 128,
+            "type": "multiple",
+            "question": "¿Cuáles son beneficios de utilizar Amazon RDS Multi-AZ? (Seleccione DOS)",
+            "options": {
+              "a": "Alta disponibilidad",
+              "b": "Escalabilidad de lectura",
+              "c": "Failover automático",
+              "d": "Menor latencia de lectura"
+            },
+            "answer": ["a", "c"],
+            "explanation": "Amazon RDS Multi-AZ proporciona alta disponibilidad y failover automático mediante la replicación sincrónica en una zona de disponibilidad diferente. No mejora la escalabilidad de lectura ni reduce la latencia de lectura, para eso se utilizan las Read Replicas."
+          },          
+          {
+            "id": 129,
+            "type": "single",
+            "question": "Una empresa necesita procesar y analizar datos de redes sociales en tiempo real. ¿Qué servicio de AWS es más apropiado?",
+            "options": {
+              "a": "Amazon Kinesis",
+              "b": "Amazon EMR",
+              "c": "Amazon Redshift",
+              "d": "Amazon Athena"
+            },
+            "answer": "a",
+            "explanation": "Amazon Kinesis está diseñado específicamente para el procesamiento y análisis de datos en tiempo real, como flujos de datos de redes sociales. EMR es para procesamiento de big data por lotes, Redshift es un data warehouse, y Athena es para consultas SQL en datos almacenados en S3."
+          },          
+          {
+            "id": 130,
+            "type": "single",
+            "question": "¿Qué servicio de AWS ayuda a los usuarios a crear y compartir recursos AWS aprobados en su organización?",
+            "options": {
+              "a": "AWS Service Catalog",
+              "b": "AWS Systems Manager",
+              "c": "AWS OpsWorks",
+              "d": "AWS CloudFormation"
+            },
+            "answer": "a",
+            "explanation": "AWS Service Catalog permite a las organizaciones crear y compartir catálogos de recursos AWS aprobados, facilitando el cumplimiento de estándares organizacionales. Systems Manager es para operaciones, OpsWorks para gestión de configuración, y CloudFormation para automatización de infraestructura."
+          },          
+          {
+            "id": 131,
+            "type": "multiple",
+            "question": "¿Cuáles son características de AWS Shield Advanced? (Seleccione DOS)",
+            "options": {
+              "a": "Protección DDoS a nivel de aplicación",
+              "b": "Acceso al equipo de respuesta DDoS (DRT)",
+              "c": "Protección básica contra DDoS sin costo",
+              "d": "Cifrado de datos en reposo"
+            },
+            "answer": ["a", "b"],
+            "explanation": "AWS Shield Advanced proporciona protección DDoS mejorada a nivel de aplicación y acceso al equipo de respuesta DDoS (DRT). La protección básica contra DDoS es parte de AWS Shield Standard (gratuito), y el cifrado de datos es una funcionalidad proporcionada por otros servicios AWS."
+          },          
+          {
+            "id": 132,
+            "type": "single",
+            "question": "Una empresa necesita implementar un proceso de revisión y aprobación para cambios en su infraestructura AWS. ¿Qué servicio debería utilizar?",
+            "options": {
+              "a": "AWS CloudFormation",
+              "b": "AWS Service Catalog",
+              "c": "AWS Systems Manager",
+              "d": "AWS Config"
+            },
+            "answer": "b",
+            "explanation": "AWS Service Catalog permite implementar procesos de gobierno incluyendo revisión y aprobación para cambios en la infraestructura AWS. CloudFormation es para automatización de infraestructura, Systems Manager para operaciones, y Config para auditoría de recursos."
+          },          
+          {
+            "id": 133,
+            "type": "single",
+            "question": "¿Qué herramienta de AWS permite a los usuarios calcular el costo total de ejecutar una aplicación en AWS?",
+            "options": {
+              "a": "AWS Cost Explorer",
+              "b": "AWS Pricing Calculator",
+              "c": "AWS Budgets",
+              "d": "AWS Cost and Usage Report"
+            },
+            "answer": "b",
+            "explanation": "AWS Pricing Calculator permite estimar el costo total de ejecutar aplicaciones en AWS antes de implementarlas. Cost Explorer es para analizar costos históricos, Budgets para establecer alertas de costos, y Cost and Usage Report para detalles de uso y costos actuales."
+          },          
+          {
+            "id": 134,
+            "type": "multiple",
+            "question": "¿Cuáles son ventajas de utilizar instancias EC2 Auto Scaling? (Seleccione DOS)",
+            "options": {
+              "a": "Mejor disponibilidad de aplicaciones",
+              "b": "Optimización automática de costos",
+              "c": "Copias de seguridad automáticas",
+              "d": "Cifrado automático de datos"
+            },
+            "answer": ["a", "b"],
+            "explanation": "EC2 Auto Scaling mejora la disponibilidad de las aplicaciones ajustando automáticamente la capacidad y optimiza los costos al escalar según la demanda. No proporciona copias de seguridad automáticas ni cifrado de datos, ya que estas son funcionalidades de otros servicios AWS."
+          },          
+          {
+            "id": 135,
+            "type": "single",
+            "question": "¿Qué servicio de AWS debe usar una empresa para implementar un sistema de nombres de dominio altamente disponible?",
+            "options": {
+              "a": "Amazon Route 53",
+              "b": "AWS Direct Connect",
+              "c": "Amazon CloudFront",
+              "d": "AWS Global Accelerator"
+            },
+            "answer": "a",
+            "explanation": "Amazon Route 53 es un servicio DNS altamente disponible y escalable diseñado para dirigir a los usuarios a aplicaciones web. Direct Connect es para conectividad dedicada, CloudFront es una CDN, y Global Accelerator es para optimizar el rendimiento de aplicaciones."
+          },          
+          {
+            "id": 136,
+            "type": "single",
+            "question": "Una empresa necesita analizar grandes conjuntos de datos usando consultas SQL sin tener que cargar los datos en una base de datos. ¿Qué servicio debería usar?",
+            "options": {
+              "a": "Amazon Redshift",
+              "b": "Amazon Athena",
+              "c": "Amazon RDS",
+              "d": "Amazon EMR"
+            },
+            "answer": "b",
+            "explanation": "Amazon Athena permite analizar datos directamente en S3 usando consultas SQL estándar sin necesidad de cargar los datos en una base de datos. Redshift es un data warehouse que requiere cargar datos, RDS es para bases de datos relacionales, y EMR es para procesamiento de big data."
+          },          
+          {
+            "id": 137,
+            "type": "multiple",
+            "question": "¿Cuáles son características de AWS IAM? (Seleccione DOS)",
+            "options": {
+              "a": "Control de acceso granular a recursos AWS",
+              "b": "Servicio regional",
+              "c": "Integración con identidades corporativas",
+              "d": "Servicio de pago"
+            },
+            "answer": ["a", "c"],
+            "explanation": "AWS IAM proporciona control de acceso granular a recursos AWS y permite la integración con sistemas de identidad corporativos existentes. IAM es un servicio global (no regional) y es gratuito para todas las cuentas AWS."
+          },          
+          {
+            "id": 138,
+            "type": "single",
+            "question": "¿Qué servicio de AWS proporciona una forma de implementar y gestionar bases de datos relacionales sin tener que administrar el hardware subyacente?",
+            "options": {
+              "a": "Amazon RDS",
+              "b": "Amazon DynamoDB",
+              "c": "Amazon Redshift",
+              "d": "Amazon ElastiCache"
+            },
+            "answer": "a",
+            "explanation": "Amazon RDS es un servicio administrado que facilita la configuración, operación y escalado de bases de datos relacionales sin necesidad de gestionar el hardware subyacente. DynamoDB es para bases de datos NoSQL, Redshift es un data warehouse, y ElastiCache es para caché en memoria."
+          },          
+          {
+            "id": 139,
+            "type": "single",
+            "question": "¿Qué servicio de AWS ayuda a proteger aplicaciones web contra ataques comunes como inyección SQL y cross-site scripting?",
+            "options": {
+              "a": "AWS WAF",
+              "b": "AWS Shield",
+              "c": "Network ACLs",
+              "d": "Security Groups"
+            },
+            "answer": "a",
+            "explanation": "AWS WAF (Web Application Firewall) protege las aplicaciones web contra ataques comunes como inyección SQL y cross-site scripting mediante reglas personalizables. Shield es para protección DDoS, y los Network ACLs y Security Groups operan a nivel de red."
+          },
+          {
+            "id": 140,
+            "type": "multiple",
+            "question": "¿Cuáles son características del pilar de Eficiencia de Rendimiento del AWS Well-Architected Framework? (Seleccione DOS)",
+            "options": {
+              "a": "Experimentación frecuente",
+              "b": "Uso de tecnologías serverless",
+              "c": "Backup regular de datos",
+              "d": "Implementación de múltiples capas de seguridad"
+            },
+            "answer": ["a", "b"],
+            "explanation": "El pilar de Eficiencia de Rendimiento enfatiza la experimentación frecuente para mejorar el rendimiento y el uso de tecnologías serverless para reducir la complejidad operativa. Los backups regulares pertenecen al pilar de Fiabilidad, y las múltiples capas de seguridad al pilar de Seguridad."
+          },          
+          {
+            "id": 141,
+            "type": "single",
+            "question": "¿Qué servicio de AWS debería usar una empresa para automatizar la distribución de software y parches en una flota de instancias EC2?",
+            "options": {
+              "a": "AWS Systems Manager",
+              "b": "AWS Config",
+              "c": "AWS OpsWorks",
+              "d": "AWS CloudFormation"
+            },
+            "answer": "a",
+            "explanation": "AWS Systems Manager proporciona capacidades de automatización para gestionar flotas de instancias EC2, incluyendo la distribución de software y parches. Config es para auditoría de recursos, OpsWorks para gestión de configuración usando Chef/Puppet, y CloudFormation para infraestructura como código."
+          },          
+          {
+            "id": 142,
+            "type": "single",
+            "question": "Una empresa necesita una solución rentable para almacenar datos de registro que deben retenerse por ley durante 7 años. ¿Qué servicio de AWS es el más apropiado?",
+            "options": {
+              "a": "Amazon S3 Standard",
+              "b": "Amazon S3 Glacier Deep Archive",
+              "c": "Amazon S3 Standard-IA",
+              "d": "Amazon EFS"
+            },
+            "answer": "b",
+            "explanation": "Amazon S3 Glacier Deep Archive es la opción más económica para el almacenamiento a largo plazo de datos que rara vez se acceden, como datos que deben retenerse por requisitos legales. Ofrece el costo más bajo por GB con tiempos de recuperación de hasta 48 horas."
+          },          
+          {
+            "id": 143,
+            "type": "multiple",
+            "question": "¿Cuáles son ventajas de utilizar AWS Organizations? (Seleccione DOS)",
+            "options": {
+              "a": "Facturación consolidada",
+              "b": "Control centralizado de políticas",
+              "c": "Backup automático entre cuentas",
+              "d": "Replicación automática de datos"
+            },
+            "answer": ["a", "b"],
+            "explanation": "AWS Organizations ofrece facturación consolidada para todas las cuentas de la organización y control centralizado mediante políticas de servicios (SCP). No proporciona backup automático entre cuentas ni replicación automática de datos, ya que estas son funcionalidades de otros servicios AWS."
+          },          
+          {
+            "id": 144,
+            "type": "single",
+            "question": "¿Qué servicio de AWS debe usar una empresa para ejecutar análisis de big data en grandes conjuntos de datos usando clusters de Hadoop?",
+            "options": {
+              "a": "Amazon EMR",
+              "b": "Amazon Redshift",
+              "c": "Amazon Athena",
+              "d": "Amazon RDS"
+            },
+            "answer": "a",
+            "explanation": "Amazon EMR (Elastic MapReduce) está diseñado específicamente para procesar grandes cantidades de datos usando frameworks como Hadoop y Spark. Redshift es para data warehousing, Athena para consultas SQL en S3, y RDS para bases de datos relacionales tradicionales."
+          },          
+          {
+            "id": 145,
+            "type": "single",
+            "question": "Una empresa necesita una forma de acceder a sus recursos AWS de manera segura sin exponer credenciales. ¿Qué característica de AWS debería utilizar?",
+            "options": {
+              "a": "IAM Roles",
+              "b": "Security Groups",
+              "c": "Access Keys",
+              "d": "Key Pairs"
+            },
+            "answer": "a",
+            "explanation": "Los IAM Roles proporcionan credenciales temporales y seguras para acceder a recursos AWS sin necesidad de compartir o exponer credenciales a largo plazo. Los Security Groups son para control de tráfico de red, Access Keys son credenciales a largo plazo, y Key Pairs son para acceso SSH a instancias EC2."
+          },          
+          {
+            "id": 146,
+            "type": "multiple",
+            "question": "¿Cuáles son características de Amazon CloudFront? (Seleccione DOS)",
+            "options": {
+              "a": "Distribución global de contenido",
+              "b": "Integración con AWS Shield",
+              "c": "Almacenamiento permanente de datos",
+              "d": "Procesamiento de bases de datos"
+            },
+            "answer": ["a", "b"],
+            "explanation": "Amazon CloudFront es una CDN que proporciona distribución global de contenido y se integra con AWS Shield para protección contra DDoS. No está diseñado para almacenamiento permanente de datos ni procesamiento de bases de datos."
+          },          
+          {
+            "id": 147,
+            "type": "single",
+            "question": "¿Qué servicio de AWS permite a los usuarios realizar una evaluación de seguridad automática de sus aplicaciones y redes?",
+            "options": {
+              "a": "Amazon Inspector",
+              "b": "AWS WAF",
+              "c": "AWS Shield",
+              "d": "AWS Config"
+            },
+            "answer": "a",
+            "explanation": "Amazon Inspector realiza evaluaciones de seguridad automatizadas para ayudar a mejorar la seguridad y el cumplimiento de las aplicaciones desplegadas en AWS. WAF es para protección de aplicaciones web, Shield para protección DDoS, y Config para auditoría de configuraciones."
+          },          
+          {
+            "id": 148,
+            "type": "single",
+            "question": "Una empresa necesita una solución de mensajería que permita el desacoplamiento de componentes de su aplicación. ¿Qué servicio de AWS debería usar?",
+            "options": {
+              "a": "Amazon SQS",
+              "b": "Amazon SNS",
+              "c": "AWS Direct Connect",
+              "d": "Amazon API Gateway"
+            },
+            "answer": "a",
+            "explanation": "Amazon SQS (Simple Queue Service) proporciona una cola de mensajes administrada que permite desacoplar y escalar microservicios, sistemas distribuidos y aplicaciones serverless. SNS es para notificaciones, Direct Connect para conectividad dedicada, y API Gateway para gestión de APIs."
+          },          
+          {
+            "id": 149,
+            "type": "multiple",
+            "question": "¿Cuáles son beneficios de la facturación consolidada en AWS Organizations? (Seleccione DOS)",
+            "options": {
+              "a": "Descuentos por volumen combinado",
+              "b": "Un solo método de pago",
+              "c": "Replicación automática de recursos",
+              "d": "Backup automático de datos"
+            },
+            "answer": ["a", "b"],
+            "explanation": "La facturación consolidada en AWS Organizations permite aprovechar descuentos por volumen al combinar el uso de todas las cuentas y utilizar un solo método de pago para todas las cuentas. No proporciona replicación automática de recursos ni backup automático de datos."
+          },          
+          {
+            "id": 150,
+            "type": "single",
+            "question": "¿Qué servicio de AWS proporciona un almacén de datos centralizado para analizar datos de registro de múltiples fuentes?",
+            "options": {
+              "a": "Amazon CloudWatch Logs",
+              "b": "AWS CloudTrail",
+              "c": "Amazon S3",
+              "d": "AWS Config"
+            },
+            "answer": "a",
+            "explanation": "Amazon CloudWatch Logs permite centralizar los logs de todos sus sistemas, aplicaciones y servicios AWS para un fácil almacenamiento y análisis. CloudTrail es para auditoría de API, S3 es para almacenamiento de objetos, y Config para auditoría de configuraciones."
+          },          
+          {
+            "id": 151,
+            "type": "single",
+            "question": "Una empresa necesita migrar una base de datos a AWS con el mínimo tiempo de inactividad posible. ¿Qué servicio debería utilizar?",
+            "options": {
+              "a": "AWS Database Migration Service",
+              "b": "AWS DataSync",
+              "c": "AWS Transfer Family",
+              "d": "AWS Backup"
+            },
+            "answer": "a",
+            "explanation": "AWS Database Migration Service (DMS) ayuda a migrar bases de datos a AWS de manera rápida y segura, con mínimo tiempo de inactividad. DataSync es para transferencia de archivos, Transfer Family para transferencia FTP, y Backup para gestión de copias de seguridad."
+          },          
+          {
+            "id": 152,
+            "type": "multiple",
+            "question": "¿Cuáles son características de Amazon DynamoDB? (Seleccione DOS)",
+            "options": {
+              "a": "Base de datos NoSQL totalmente administrada",
+              "b": "Rendimiento de milisegundos",
+              "c": "Soporte para uniones SQL complejas",
+              "d": "Limitado a una región"
+            },
+            "answer": ["a", "b"],
+            "explanation": "Amazon DynamoDB es una base de datos NoSQL totalmente administrada que ofrece rendimiento consistente de milisegundos a cualquier escala. No está diseñada para uniones SQL complejas y puede configurarse para replicación global."
+          },          
+          {
+            "id": 153,
+            "type": "single",
+            "question": "¿Qué servicio de AWS ayuda a los usuarios a entender y gestionar mejor sus costos y uso de la nube AWS?",
+            "options": {
+              "a": "AWS Cost Explorer",
+              "b": "AWS Pricing Calculator",
+              "c": "AWS Systems Manager",
+              "d": "AWS Config"
+            },
+            "answer": "a",
+            "explanation": "AWS Cost Explorer proporciona visualización, comprensión y gestión de los costos y uso de AWS a lo largo del tiempo. Pricing Calculator es para estimaciones futuras, Systems Manager para operaciones, y Config para auditoría de recursos."
+          },          
+          {
+            "id": 154,
+            "type": "single",
+            "question": "¿Qué servicio de AWS debe usar una empresa para implementar un proceso de aprobación multi-paso para cambios de infraestructura?",
+            "options": {
+              "a": "AWS Service Catalog",
+              "b": "AWS Systems Manager",
+              "c": "AWS OpsWorks",
+              "d": "AWS CloudFormation"
+            },
+            "answer": "a",
+            "explanation": "AWS Service Catalog permite implementar un proceso de gobierno con aprobaciones multi-paso para cambios en la infraestructura AWS. Systems Manager es para operaciones, OpsWorks para gestión de configuración, y CloudFormation para automatización de infraestructura."
+          },
+          {
+            "id": 155,
+            "type": "multiple",
+            "question": "¿Cuáles de las siguientes son ventajas de usar AWS Lambda? (Seleccione DOS)",
+            "options": {
+              "a": "No hay que gestionar servidores",
+              "b": "Pago solo por el tiempo de ejecución",
+              "c": "Control total sobre el sistema operativo",
+              "d": "Almacenamiento persistente incluido"
+            },
+            "answer": ["a", "b"],
+            "explanation": "AWS Lambda ofrece computación serverless donde no hay que gestionar servidores y solo se paga por el tiempo de ejecución real del código. No proporciona control sobre el sistema operativo ni incluye almacenamiento persistente, ya que es un servicio completamente administrado enfocado en la ejecución de código."
+          },          
+          {
+            "id": 156,
+            "type": "single",
+            "question": "Una empresa necesita una solución que le permita ver y rastrear cambios en las configuraciones de recursos AWS a lo largo del tiempo. ¿Qué servicio debería usar?",
+            "options": {
+              "a": "AWS Config",
+              "b": "AWS CloudTrail",
+              "c": "Amazon Inspector",
+              "d": "AWS Systems Manager"
+            },
+            "answer": "a",
+            "explanation": "AWS Config proporciona un inventario detallado de los recursos AWS y un historial de cambios en las configuraciones. CloudTrail es para auditoría de actividad API, Inspector para evaluación de seguridad, y Systems Manager para operaciones de administración."
+          },          
+          {
+            "id": 157,
+            "type": "single",
+            "question": "¿Qué servicio de AWS ayuda a descubrir y proteger datos sensibles almacenados en buckets S3?",
+            "options": {
+              "a": "Amazon Macie",
+              "b": "AWS WAF",
+              "c": "Amazon Inspector",
+              "d": "AWS Shield"
+            },
+            "answer": "a",
+            "explanation": "Amazon Macie usa machine learning y reconocimiento de patrones para descubrir y proteger datos sensibles almacenados en S3. WAF es para protección de aplicaciones web, Inspector para evaluación de vulnerabilidades en EC2, y Shield para protección DDoS."
+          },          
+          {
+            "id": 158,
+            "type": "multiple",
+            "question": "¿Cuáles son características del modelo de precios de las instancias spot de EC2? (Seleccione DOS)",
+            "options": {
+              "a": "Descuentos significativos",
+              "b": "Pueden ser interrumpidas",
+              "c": "Garantía de disponibilidad",
+              "d": "Precios fijos"
+            },
+            "answer": ["a", "b"],
+            "explanation": "Las instancias spot de EC2 ofrecen descuentos significativos (hasta 90%) comparado con instancias on-demand, pero pueden ser interrumpidas cuando AWS necesita recuperar la capacidad. No garantizan disponibilidad continua ni tienen precios fijos, ya que los precios fluctúan según la demanda."
+          },          
+          {
+            "id": 159,
+            "type": "single",
+            "question": "¿Qué servicio de AWS es más apropiado para almacenar y compartir archivos entre múltiples instancias EC2 en diferentes zonas de disponibilidad?",
+            "options": {
+              "a": "Amazon EFS",
+              "b": "Amazon EBS",
+              "c": "Instance Store",
+              "d": "AWS Storage Gateway"
+            },
+            "answer": "a",
+            "explanation": "Amazon EFS proporciona un sistema de archivos compartido que puede ser accedido simultáneamente por múltiples instancias EC2 en diferentes zonas de disponibilidad. EBS solo puede conectarse a una instancia en la misma zona, Instance Store es temporal, y Storage Gateway es para integración híbrida."
+          },          
+          {
+            "id": 160,
+            "type": "single",
+            "question": "Una empresa necesita implementar un sistema de autenticación para su aplicación web que soporte autenticación mediante redes sociales. ¿Qué servicio debería usar?",
+            "options": {
+              "a": "Amazon Cognito",
+              "b": "AWS IAM",
+              "c": "AWS Directory Service",
+              "d": "AWS Single Sign-On"
+            },
+            "answer": "a",
+            "explanation": "Amazon Cognito proporciona autenticación, autorización y gestión de usuarios para aplicaciones web y móviles, incluyendo soporte para proveedores de identidad social. IAM es para gestión de acceso a recursos AWS, Directory Service para servicios de directorio, y SSO para acceso empresarial a AWS."
+          },          
+          {
+            "id": 161,
+            "type": "multiple",
+            "question": "¿Cuáles son ventajas de utilizar Amazon Aurora sobre bases de datos tradicionales? (Seleccione DOS)",
+            "options": {
+              "a": "Escalado automático del almacenamiento",
+              "b": "Replicación multi-región automática",
+              "c": "Control total sobre el motor de base de datos",
+              "d": "Backup continuo automático"
+            },
+            "answer": ["a", "d"],
+            "explanation": "Amazon Aurora ofrece escalado automático del almacenamiento y backup continuo automático. No proporciona replicación multi-región automática (requiere configuración) ni control total sobre el motor de base de datos, ya que es un servicio administrado."
+          },          
+          {
+            "id": 162,
+            "type": "single",
+            "question": "¿Qué servicio de AWS permite crear y gestionar claves de cifrado para otros servicios AWS?",
+            "options": {
+              "a": "AWS KMS",
+              "b": "AWS Certificate Manager",
+              "c": "AWS Secrets Manager",
+              "d": "AWS IAM"
+            },
+            "answer": "a",
+            "explanation": "AWS Key Management Service (KMS) permite crear y controlar las claves de cifrado utilizadas para cifrar datos en servicios AWS. Certificate Manager es para certificados SSL/TLS, Secrets Manager para gestión de secretos, e IAM para control de acceso."
+          },          
+          {
+            "id": 163,
+            "type": "single",
+            "question": "Una empresa necesita una solución para monitorear la salud y el rendimiento de sus aplicaciones en AWS. ¿Qué servicio debería usar?",
+            "options": {
+              "a": "Amazon CloudWatch",
+              "b": "AWS CloudTrail",
+              "c": "AWS Config",
+              "d": "AWS Systems Manager"
+            },
+            "answer": "a",
+            "explanation": "Amazon CloudWatch es un servicio de monitoreo y observabilidad que proporciona datos e insights procesables para monitorear aplicaciones, responder a cambios de rendimiento y optimizar recursos. CloudTrail es para auditoría, Config para configuraciones, y Systems Manager para operaciones."
+          },          
+          {
+            "id": 164,
+            "type": "multiple",
+            "question": "¿Cuáles son responsabilidades del cliente según el Modelo de Responsabilidad Compartida de AWS? (Seleccione DOS)",
+            "options": {
+              "a": "Seguridad en la nube",
+              "b": "Mantenimiento del hardware físico",
+              "c": "Configuración de firewall de aplicaciones",
+              "d": "Gestión de la infraestructura global"
+            },
+            "answer": ["a", "c"],
+            "explanation": "Bajo el Modelo de Responsabilidad Compartida, los clientes son responsables de la seguridad EN la nube, incluyendo la configuración de firewalls de aplicaciones y la protección de sus datos. AWS es responsable del mantenimiento del hardware físico y la gestión de la infraestructura global."
+          },          
+          {
+            "id": 165,
+            "type": "single",
+            "question": "¿Qué servicio de AWS proporciona capacidad de cómputo que se puede utilizar para ejecutar cualquier tipo de aplicación?",
+            "options": {
+              "a": "Amazon EC2",
+              "b": "AWS Lambda",
+              "c": "Amazon ECS",
+              "d": "AWS Elastic Beanstalk"
+            },
+            "answer": "a",
+            "explanation": "Amazon EC2 proporciona capacidad de cómputo redimensionable en la nube y permite ejecutar prácticamente cualquier tipo de aplicación. Lambda es para código sin servidor, ECS para contenedores, y Elastic Beanstalk para despliegue de aplicaciones web."
+          },          
+          {
+            "id": 166,
+            "type": "single",
+            "question": "Una empresa necesita una solución de base de datos que escale automáticamente para manejar millones de solicitudes por segundo. ¿Qué servicio debería usar?",
+            "options": {
+              "a": "Amazon DynamoDB",
+              "b": "Amazon RDS",
+              "c": "Amazon Redshift",
+              "d": "Amazon ElastiCache"
+            },
+            "answer": "a",
+            "explanation": "Amazon DynamoDB es una base de datos NoSQL que escala automáticamente para manejar millones de solicitudes por segundo sin necesidad de gestión de capacidad. RDS es para bases de datos relacionales tradicionales, Redshift para data warehousing, y ElastiCache para caché en memoria."
+          },          
+          {
+            "id": 167,
+            "type": "multiple",
+            "question": "¿Cuáles son beneficios de AWS Shield Standard? (Seleccione DOS)",
+            "options": {
+              "a": "Protección gratuita contra ataques DDoS comunes",
+              "b": "Protección automática para todos los clientes AWS",
+              "c": "Acceso al equipo de respuesta DDoS",
+              "d": "Protección avanzada contra ataques sofisticados"
+            },
+            "answer": ["a", "b"],
+            "explanation": "AWS Shield Standard proporciona protección gratuita y automática contra ataques DDoS comunes para todos los clientes AWS. El acceso al equipo de respuesta DDoS y la protección avanzada contra ataques sofisticados son características de AWS Shield Advanced."
+          },          
+          {
+            "id": 168,
+            "type": "single",
+            "question": "¿Qué característica de AWS permite a los usuarios ver una estimación de costos mensuales y recibir alertas cuando los costos exceden los umbrales definidos?",
+            "options": {
+              "a": "AWS Budgets",
+              "b": "AWS Cost Explorer",
+              "c": "AWS Pricing Calculator",
+              "d": "AWS Cost and Usage Report"
+            },
+            "answer": "a",
+            "explanation": "AWS Budgets permite crear presupuestos personalizados para rastrear costos y uso, y configurar alertas cuando los gastos exceden o se prevé que excedan los umbrales definidos. Cost Explorer es para análisis histórico, Pricing Calculator para estimaciones, y Cost and Usage Report para informes detallados."
+          },          
+          {
+            "id": 169,
+            "type": "single",
+            "question": "Una empresa necesita implementar control de versiones para objetos en S3. ¿Qué característica debería utilizar?",
+            "options": {
+              "a": "Versionamiento de S3",
+              "b": "Ciclo de vida de S3",
+              "c": "Replicación de S3",
+              "d": "Cifrado de S3"
+            },
+            "answer": "a",
+            "explanation": "El versionamiento de S3 permite mantener múltiples variantes de un objeto en el mismo bucket, lo que ayuda a recuperarse de acciones no deseadas y fallos de aplicación. El ciclo de vida es para gestión de almacenamiento, la replicación para copiar datos entre buckets, y el cifrado para proteger datos."
+          },
+          {
+            "id": 170,
+            "type": "multiple",
+            "question": "¿Cuáles son características del pilar de Sostenibilidad del AWS Well-Architected Framework? (Seleccione DOS)",
+            "options": {
+              "a": "Adopción de nuevas tecnologías más eficientes",
+              "b": "Selección de regiones basada en emisiones de carbono",
+              "c": "Maximización del uso de recursos",
+              "d": "Mantenimiento de múltiples copias redundantes"
+            },
+            "answer": ["a", "b"],
+            "explanation": "El pilar de Sostenibilidad se centra en minimizar el impacto ambiental, incluyendo la adopción de tecnologías más eficientes y la selección de regiones AWS basada en su eficiencia energética y emisiones de carbono. La maximización del uso de recursos sin necesidad y el mantenimiento de copias redundantes innecesarias pueden aumentar el impacto ambiental."
+          },          
+          {
+            "id": 171,
+            "type": "single",
+            "question": "Una empresa necesita proporcionar acceso temporal a recursos AWS a contratistas externos. ¿Qué solución es la más segura?",
+            "options": {
+              "a": "Crear usuarios IAM con políticas restrictivas",
+              "b": "Usar IAM roles con políticas temporales",
+              "c": "Compartir credenciales de usuario existentes",
+              "d": "Crear cuentas AWS separadas"
+            },
+            "answer": "b",
+            "explanation": "Los IAM roles con políticas temporales son la solución más segura para proporcionar acceso temporal a recursos AWS, ya que ofrecen credenciales temporales que expiran automáticamente y no requieren gestión de contraseñas. Crear usuarios IAM es menos seguro, compartir credenciales va contra las mejores prácticas, y crear cuentas separadas es excesivo."
+          },          
+          {
+            "id": 172,
+            "type": "single",
+            "question": "¿Qué servicio de AWS debería usar una empresa para crear dashboards personalizados que muestren métricas operativas de múltiples recursos AWS?",
+            "options": {
+              "a": "Amazon CloudWatch",
+              "b": "AWS Systems Manager",
+              "c": "AWS Config",
+              "d": "AWS CloudTrail"
+            },
+            "answer": "a",
+            "explanation": "Amazon CloudWatch permite crear dashboards personalizados que muestran métricas operativas de múltiples recursos AWS en tiempo real. Systems Manager es para operaciones de administración, Config para auditoría de configuraciones, y CloudTrail para auditoría de actividad API."
+          },          
+          {
+            "id": 173,
+            "type": "multiple",
+            "question": "¿Cuáles son ventajas de utilizar Amazon RDS? (Seleccione DOS)",
+            "options": {
+              "a": "Parches automáticos",
+              "b": "Backups automatizados",
+              "c": "Control total del sistema operativo",
+              "d": "Acceso root a la base de datos"
+            },
+            "answer": ["a", "b"],
+            "explanation": "Amazon RDS ofrece parches automáticos y backups automatizados como parte de su servicio administrado. No proporciona control total del sistema operativo ni acceso root a la base de datos, ya que estos aspectos son gestionados por AWS para garantizar seguridad y facilidad de administración."
+          },          
+          {
+            "id": 174,
+            "type": "single",
+            "question": "Una empresa necesita una solución para distribuir el tráfico entrante entre múltiples servidores web. ¿Qué servicio AWS debería usar?",
+            "options": {
+              "a": "Elastic Load Balancing",
+              "b": "Amazon Route 53",
+              "c": "AWS Global Accelerator",
+              "d": "Amazon CloudFront"
+            },
+            "answer": "a",
+            "explanation": "Elastic Load Balancing distribuye automáticamente el tráfico entrante entre múltiples destinos, como instancias EC2, contenedores y direcciones IP. Route 53 es para DNS, Global Accelerator para optimización de red, y CloudFront es una CDN."
+          },          
+          {
+            "id": 175,
+            "type": "single",
+            "question": "¿Qué característica de AWS permite a las organizaciones restringir los servicios AWS que los usuarios pueden acceder?",
+            "options": {
+              "a": "Service Control Policies (SCPs)",
+              "b": "Security Groups",
+              "c": "Network ACLs",
+              "d": "IAM Password Policies"
+            },
+            "answer": "a",
+            "explanation": "Las Service Control Policies (SCPs) en AWS Organizations permiten a las organizaciones restringir los servicios y acciones que los usuarios pueden realizar, incluso si tienen permisos IAM que indiquen lo contrario. Security Groups y Network ACLs son para control de tráfico de red, y las Password Policies son para gestión de contraseñas."
+          },          
+          {
+            "id": 176,
+            "type": "multiple",
+            "question": "¿Cuáles son beneficios de usar AWS CloudFormation? (Seleccione DOS)",
+            "options": {
+              "a": "Automatización de infraestructura",
+              "b": "Control de versiones de infraestructura",
+              "c": "Monitoreo en tiempo real",
+              "d": "Backup automático"
+            },
+            "answer": ["a", "b"],
+            "explanation": "AWS CloudFormation permite automatizar el despliegue de infraestructura y mantener control de versiones de las configuraciones mediante plantillas. No proporciona monitoreo en tiempo real ni backup automático, ya que estas son funcionalidades de otros servicios AWS."
+          },          
+          {
+            "id": 177,
+            "type": "single",
+            "question": "Una empresa necesita cifrar datos sensibles y gestionar claves de cifrado de manera centralizada. ¿Qué servicio AWS debería usar?",
+            "options": {
+              "a": "AWS KMS",
+              "b": "AWS Certificate Manager",
+              "c": "AWS Secrets Manager",
+              "d": "AWS WAF"
+            },
+            "answer": "a",
+            "explanation": "AWS Key Management Service (KMS) permite crear y gestionar claves de cifrado de manera centralizada para cifrar datos en servicios AWS. Certificate Manager es para certificados SSL/TLS, Secrets Manager para gestión de secretos como contraseñas, y WAF para protección de aplicaciones web."
+          },          
+          {
+            "id": 178,
+            "type": "single",
+            "question": "¿Qué servicio de AWS proporciona recomendaciones sobre formas de reducir costos mientras se mantiene el rendimiento?",
+            "options": {
+              "a": "AWS Trusted Advisor",
+              "b": "AWS Cost Explorer",
+              "c": "AWS Budgets",
+              "d": "AWS Config"
+            },
+            "answer": "a",
+            "explanation": "AWS Trusted Advisor proporciona recomendaciones en tiempo real para optimizar recursos AWS, incluyendo sugerencias para reducir costos mientras se mantiene el rendimiento. Cost Explorer es para análisis de costos, Budgets para establecer presupuestos, y Config para auditoría de recursos."
+          },          
+          {
+            "id": 179,
+            "type": "multiple",
+            "question": "¿Cuáles son características de Amazon S3 Standard-IA? (Seleccione DOS)",
+            "options": {
+              "a": "Menor costo por GB que S3 Standard",
+              "b": "Acceso inmediato a los datos",
+              "c": "Sin cargo mínimo de almacenamiento",
+              "d": "Diseñado para datos accedidos frecuentemente"
+            },
+            "answer": ["a", "b"],
+            "explanation": "Amazon S3 Standard-IA ofrece un menor costo por GB que S3 Standard y mantiene el acceso inmediato a los datos. Tiene un cargo mínimo de almacenamiento de 30 días y está diseñado para datos que se acceden con poca frecuencia pero requieren acceso rápido cuando es necesario."
+          },          
+          {
+            "id": 180,
+            "type": "single",
+            "question": "Una empresa necesita una solución para proteger sus aplicaciones web contra vulnerabilidades comunes como SQL injection. ¿Qué servicio debería usar?",
+            "options": {
+              "a": "AWS WAF",
+              "b": "AWS Shield",
+              "c": "Security Groups",
+              "d": "Network ACLs"
+            },
+            "answer": "a",
+            "explanation": "AWS WAF (Web Application Firewall) protege las aplicaciones web contra vulnerabilidades comunes como SQL injection mediante reglas personalizables. Shield es para protección DDoS, y Security Groups y Network ACLs operan a nivel de red."
+          },          
+          {
+            "id": 181,
+            "type": "multiple",
+            "question": "¿Cuáles son características del servicio Amazon Inspector? (Seleccione DOS)",
+            "options": {
+              "a": "Evaluación automatizada de seguridad",
+              "b": "Detección de vulnerabilidades",
+              "c": "Protección contra DDoS",
+              "d": "Cifrado de datos"
+            },
+            "answer": ["a", "b"],
+            "explanation": "Amazon Inspector proporciona evaluación automatizada de seguridad y detección de vulnerabilidades para instancias EC2 y contenedores. No proporciona protección contra DDoS (esa es la función de Shield) ni cifrado de datos (proporcionado por servicios como KMS)."
+          },          
+          {
+            "id": 182,
+            "type": "single",
+            "question": "¿Qué servicio AWS permite a las organizaciones auditar continuamente su entorno AWS para asegurar el cumplimiento de estándares de seguridad?",
+            "options": {
+              "a": "AWS Config",
+              "b": "AWS CloudTrail",
+              "c": "Amazon CloudWatch",
+              "d": "AWS Systems Manager"
+            },
+            "answer": "a",
+            "explanation": "AWS Config permite evaluar continuamente las configuraciones de recursos AWS contra estándares de seguridad y cumplimiento definidos. CloudTrail es para auditoría de actividad API, CloudWatch para monitoreo de recursos, y Systems Manager para operaciones."
+          },          
+          {
+            "id": 183,
+            "type": "single",
+            "question": "Una empresa necesita analizar grandes volúmenes de datos semi-estructurados almacenados en S3. ¿Qué servicio AWS es más apropiado?",
+            "options": {
+              "a": "Amazon Athena",
+              "b": "Amazon RDS",
+              "c": "Amazon DynamoDB",
+              "d": "Amazon Redshift"
+            },
+            "answer": "a",
+            "explanation": "Amazon Athena permite analizar datos directamente en S3 usando SQL estándar, siendo ideal para analizar datos semi-estructurados sin necesidad de cargarlos en una base de datos. RDS es para bases de datos relacionales, DynamoDB para NoSQL, y Redshift para data warehousing estructurado."
+          },          
+          {
+            "id": 184,
+            "type": "single",
+            "question": "¿Qué servicio AWS proporciona la manera más rentable de ejecutar contenedores sin gestionar servidores?",
+            "options": {
+              "a": "AWS Fargate",
+              "b": "Amazon ECS con EC2",
+              "c": "Amazon EKS con EC2",
+              "d": "Amazon EC2"
+            },
+            "answer": "a",
+            "explanation": "AWS Fargate es una solución serverless para ejecutar contenedores que elimina la necesidad de gestionar servidores, siendo más rentable para cargas de trabajo variables. ECS y EKS con EC2 requieren gestionar instancias, y EC2 requiere administración completa de la infraestructura."
+          },
+          {
+            "id": 185,
+            "type": "multiple",
+            "question": "¿Cuáles son características del plan AWS Enterprise Support? (Seleccione DOS)",
+            "options": {
+              "a": "Technical Account Manager (TAM) designado",
+              "b": "Tiempo de respuesta menor a 15 minutos para casos críticos",
+              "c": "Soporte solo durante horario laboral",
+              "d": "Acceso limitado a AWS Trusted Advisor"
+            },
+            "answer": ["a", "b"],
+            "explanation": "El plan Enterprise Support incluye un TAM designado y garantiza tiempos de respuesta menores a 15 minutos para casos críticos. Proporciona soporte 24/7 (no solo horario laboral) y acceso completo a AWS Trusted Advisor, no limitado."
+          },          
+          {
+            "id": 186,
+            "type": "single",
+            "question": "Una empresa necesita asegurarse de que sus aplicaciones en AWS tengan alta disponibilidad. ¿Qué recomendación AWS es la más apropiada?",
+            "options": {
+              "a": "Desplegar recursos en múltiples Zonas de Disponibilidad",
+              "b": "Usar solo instancias reservadas",
+              "c": "Implementar solo en una región AWS",
+              "d": "Utilizar solo almacenamiento S3"
+            },
+            "answer": "a",
+            "explanation": "Desplegar recursos en múltiples Zonas de Disponibilidad es una práctica recomendada para lograr alta disponibilidad, ya que protege contra fallos de una única ubicación. Las instancias reservadas son para ahorro de costos, implementar en una sola región no proporciona redundancia, y S3 es solo para almacenamiento."
+          },          
+          {
+            "id": 187,
+            "type": "single",
+            "question": "¿Qué servicio de AWS proporciona la capacidad de ejecutar análisis SQL ad-hoc en datos almacenados en S3 sin necesidad de cargarlos en una base de datos?",
+            "options": {
+              "a": "Amazon Athena",
+              "b": "Amazon Redshift",
+              "c": "Amazon RDS",
+              "d": "Amazon DynamoDB"
+            },
+            "answer": "a",
+            "explanation": "Amazon Athena permite realizar consultas SQL directamente sobre datos almacenados en S3 sin necesidad de cargarlos en una base de datos. Redshift requiere cargar los datos en un data warehouse, RDS es para bases de datos relacionales, y DynamoDB es una base de datos NoSQL."
+          },          
+          {
+            "id": 188,
+            "type": "multiple",
+            "question": "¿Cuáles son beneficios de implementar una arquitectura serverless en AWS? (Seleccione DOS)",
+            "options": {
+              "a": "No hay que gestionar servidores",
+              "b": "Pago solo por recursos utilizados",
+              "c": "Control total del sistema operativo",
+              "d": "Capacidad fija garantizada"
+            },
+            "answer": ["a", "b"],
+            "explanation": "La arquitectura serverless elimina la necesidad de gestionar servidores y permite pagar solo por los recursos realmente utilizados. No proporciona control del sistema operativo (ya que es totalmente administrado) ni garantiza capacidad fija (escala automáticamente)."
+          },          
+          {
+            "id": 189,
+            "type": "single",
+            "question": "Una empresa necesita una forma de organizar y realizar un seguimiento de los recursos AWS por departamento. ¿Qué característica debería usar?",
+            "options": {
+              "a": "Etiquetas (Tags)",
+              "b": "Security Groups",
+              "c": "IAM Roles",
+              "d": "VPC"
+            },
+            "answer": "a",
+            "explanation": "Las etiquetas (tags) son pares clave-valor que permiten organizar y realizar seguimiento de recursos AWS por diferentes categorías como departamento, proyecto o entorno. Security Groups son para control de tráfico, IAM Roles para permisos, y VPC para redes virtuales."
+          },          
+          {
+            "id": 190,
+            "type": "single",
+            "question": "¿Qué servicio de AWS ayuda a proteger las credenciales de la aplicación sin codificarlas en el código?",
+            "options": {
+              "a": "AWS Secrets Manager",
+              "b": "AWS KMS",
+              "c": "AWS Certificate Manager",
+              "d": "AWS IAM"
+            },
+            "answer": "a",
+            "explanation": "AWS Secrets Manager ayuda a proteger y rotar automáticamente credenciales de aplicaciones, bases de datos y otros servicios. KMS es para gestión de claves de cifrado, Certificate Manager para certificados SSL/TLS, e IAM para gestión de identidades y accesos."
+          },          
+          {
+            "id": 191,
+            "type": "multiple",
+            "question": "¿Cuáles son características de Amazon DynamoDB? (Seleccione DOS)",
+            "options": {
+              "a": "Base de datos NoSQL totalmente administrada",
+              "b": "Rendimiento en milisegundos",
+              "c": "Soporte para joins SQL complejos",
+              "d": "Esquema de base de datos fijo"
+            },
+            "answer": ["a", "b"],
+            "explanation": "DynamoDB es una base de datos NoSQL totalmente administrada que ofrece rendimiento consistente en milisegundos. No soporta joins SQL complejos ni requiere un esquema fijo, siendo más flexible en su estructura de datos."
+          },          
+          {
+            "id": 192,
+            "type": "single",
+            "question": "Una empresa necesita almacenar datos que deben ser accesibles en milisegundos pero que rara vez se modifican. ¿Qué servicio AWS es más apropiado?",
+            "options": {
+              "a": "Amazon ElastiCache",
+              "b": "Amazon Glacier",
+              "c": "Amazon EBS",
+              "d": "Amazon EFS"
+            },
+            "answer": "a",
+            "explanation": "Amazon ElastiCache proporciona una capa de caché en memoria para datos frecuentemente accedidos, ofreciendo tiempos de respuesta en milisegundos. Glacier es para archivo a largo plazo, EBS para almacenamiento de bloques, y EFS para sistemas de archivos compartidos."
+          },          
+          {
+            "id": 193,
+            "type": "single",
+            "question": "¿Qué servicio de AWS debería usar una empresa para implementar un proceso de CI/CD completamente administrado?",
+            "options": {
+              "a": "AWS CodePipeline",
+              "b": "AWS CloudFormation",
+              "c": "AWS OpsWorks",
+              "d": "AWS Elastic Beanstalk"
+            },
+            "answer": "a",
+            "explanation": "AWS CodePipeline es un servicio de entrega continua totalmente administrado que ayuda a automatizar los pipelines de lanzamiento para actualizaciones de aplicaciones e infraestructura. CloudFormation es para infraestructura como código, OpsWorks para gestión de configuración, y Elastic Beanstalk para despliegue de aplicaciones."
+          },          
+          {
+            "id": 194,
+            "type": "multiple",
+            "question": "¿Cuáles son ventajas de utilizar Amazon RDS Multi-AZ? (Seleccione DOS)",
+            "options": {
+              "a": "Alta disponibilidad",
+              "b": "Failover automático",
+              "c": "Mejor rendimiento de lectura",
+              "d": "Menor costo de operación"
+            },
+            "answer": ["a", "b"],
+            "explanation": "RDS Multi-AZ proporciona alta disponibilidad y failover automático mediante una réplica sincrónica en otra zona de disponibilidad. No mejora el rendimiento de lectura (para eso se usan Read Replicas) ni reduce los costos de operación (de hecho, es más costoso que una implementación Single-AZ)."
+          },          
+          {
+            "id": 195,
+            "type": "single",
+            "question": "¿Qué servicio de AWS permite a los usuarios comparar diferentes escenarios de costo para sus cargas de trabajo?",
+            "options": {
+              "a": "AWS Pricing Calculator",
+              "b": "AWS Cost Explorer",
+              "c": "AWS Budgets",
+              "d": "AWS Cost and Usage Report"
+            },
+            "answer": "a",
+            "explanation": "AWS Pricing Calculator permite a los usuarios estimar y comparar costos para diferentes configuraciones de servicios AWS antes de implementarlos. Cost Explorer es para análisis de costos históricos, Budgets para establecer límites de gastos, y Cost and Usage Report para detalles de uso."
+          },          
+          {
+            "id": 196,
+            "type": "single",
+            "question": "Una empresa necesita proporcionar acceso seguro a aplicaciones internas a empleados remotos. ¿Qué servicio AWS debería usar?",
+            "options": {
+              "a": "AWS Client VPN",
+              "b": "AWS Direct Connect",
+              "c": "Amazon Connect",
+              "d": "AWS Site-to-Site VPN"
+            },
+            "answer": "a",
+            "explanation": "AWS Client VPN es un servicio VPN administrado que permite a los empleados remotos acceder de forma segura a recursos AWS y aplicaciones internas. Direct Connect es para conexiones dedicadas, Connect es para centros de contacto, y Site-to-Site VPN es para conectar redes on-premises con AWS."
+          },          
+          {
+            "id": 197,
+            "type": "multiple",
+            "question": "¿Cuáles son características del modelo de precios de AWS? (Seleccione DOS)",
+            "options": {
+              "a": "Pago por uso",
+              "b": "Sin costos iniciales",
+              "c": "Precios fijos garantizados",
+              "d": "Contratos a largo plazo obligatorios"
+            },
+            "answer": ["a", "b"],
+            "explanation": "El modelo de precios de AWS se caracteriza por el pago por uso y la ausencia de costos iniciales significativos. Los precios pueden variar con el tiempo y los contratos a largo plazo son opcionales, no obligatorios."
+          },          
+          {
+            "id": 198,
+            "type": "single",
+            "question": "¿Qué servicio de AWS ayuda a los usuarios a identificar recursos mal configurados que podrían representar riesgos de seguridad?",
+            "options": {
+              "a": "AWS Trusted Advisor",
+              "b": "AWS Inspector",
+              "c": "AWS Shield",
+              "d": "AWS WAF"
+            },
+            "answer": "a",
+            "explanation": "AWS Trusted Advisor proporciona recomendaciones en tiempo real para optimizar recursos AWS, incluyendo la identificación de configuraciones de seguridad incorrectas. Inspector es para evaluación de vulnerabilidades, Shield para protección DDoS, y WAF para protección de aplicaciones web."
+          },          
+          {
+            "id": 199,
+            "type": "single",
+            "question": "Una empresa necesita una solución para desplegar y gestionar contenedores a gran escala. ¿Qué servicio AWS debería usar?",
+            "options": {
+              "a": "Amazon ECS",
+              "b": "Amazon EC2",
+              "c": "AWS Elastic Beanstalk",
+              "d": "AWS Lambda"
+            },
+            "answer": "a",
+            "explanation": "Amazon Elastic Container Service (ECS) es un servicio de orquestación de contenedores altamente escalable que facilita la ejecución, detención y gestión de contenedores Docker. EC2 es para servidores virtuales, Elastic Beanstalk para aplicaciones web, y Lambda para código serverless."
+          },
+          {
+            "id": 200,
+            "type": "multiple",
+            "question": "Una empresa está evaluando migrar a AWS Cloud. ¿Cuáles de los siguientes son beneficios fundamentales del cloud computing según AWS? (Seleccione DOS)",
+            "options": {
+              "a": "Convertir gastos de capital en gastos variables",
+              "b": "Beneficiarse de economías de escala masivas",
+              "c": "Mantener infraestructura física redundante",
+              "d": "Necesidad de predecir capacidad a largo plazo"
+            },
+            "answer": ["a", "b"],
+            "explanation": "Los beneficios fundamentales del cloud computing incluyen la capacidad de convertir gastos de capital (CAPEX) en gastos variables (OPEX) y beneficiarse de las economías de escala masivas que AWS puede ofrecer. No es necesario mantener infraestructura física redundante ni predecir la capacidad a largo plazo, ya que AWS permite escalar según la demanda real."
+          }
+
+    ]
+  }
